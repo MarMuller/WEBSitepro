@@ -1,0 +1,178 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 21 Jan 2019 09:36:53 at https://www.sitepro.com.ar/web/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar -*.pdf
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://www.sitepro.com.ar/web/ -O1 "Q:\01_Grafica_2017\Grafica Marina\WEB SITEPRO" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar -*.pdf )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+09:37:23	Error: 	"Method Not Allowed" (405) at link https://www.sitepro.com.ar/web/xmlrpc.php (from https://www.sitepro.com.ar/web/)
+09:37:37	Warning: 	File not parsed, looks like binary: https://www.sitepro.com.ar/web/wp-content/plugins/master-slider/public/assets/css/common/grabbing.cur
+09:37:37	Warning: 	File not parsed, looks like binary: https://www.sitepro.com.ar/web/wp-content/plugins/master-slider/public/assets/css/common/grab.cur
+09:38:53	Error: 	"Not Found" (404) at link https://www.sitepro.com.ar/web/wp-content/plugins/modula-best-grid-gallery/fonts/feathericons/feathericons.eot?-8is7zf (from https://www.sitepro.com.ar/web/wp-content/plugins/modula-best-grid-gallery/scripts/modula.css?ver=1.3.2)
+09:38:53	Error: 	"Not Found" (404) at link https://www.sitepro.com.ar/web/wp-content/plugins/modula-best-grid-gallery/fonts/feathericons/feathericons.eot? (from https://www.sitepro.com.ar/web/wp-content/plugins/modula-best-grid-gallery/scripts/modula.css?ver=1.3.2)
+09:38:53	Error: 	"Not Found" (404) at link https://www.sitepro.com.ar/web/wp-content/plugins/modula-best-grid-gallery/fonts/feathericons/feathericons.woff?-8is7zf (from https://www.sitepro.com.ar/web/wp-content/plugins/modula-best-grid-gallery/scripts/modula.css?ver=1.3.2)
+09:38:53	Error: 	"Not Found" (404) at link https://www.sitepro.com.ar/web/wp-content/plugins/modula-best-grid-gallery/fonts/feathericons/feathericons.ttf?-8is7zf (from https://www.sitepro.com.ar/web/wp-content/plugins/modula-best-grid-gallery/scripts/modula.css?ver=1.3.2)
+09:38:53	Error: 	"Not Found" (404) at link https://www.sitepro.com.ar/web/wp-content/plugins/modula-best-grid-gallery/fonts/feathericons/feathericons.svg?-8is7zf (from https://www.sitepro.com.ar/web/wp-content/plugins/modula-best-grid-gallery/scripts/modula.css?ver=1.3.2)
+09:38:53	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=2536
+09:38:53	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=2536 to https://www.sitepro.com.ar/web/quienes-somos/
+09:38:54	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=4262
+09:38:54	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=4262 to https://www.sitepro.com.ar/web/productos/firma-digital/etoken-safenet-5100/
+09:38:54	Warning: 	Moved Permanently for www.sitepro.com.ar/robots.txt
+09:38:54	Warning: 	Redirected link is identical because of 'URL Hack' option: www.sitepro.com.ar/robots.txt and https://www.sitepro.com.ar/robots.txt
+09:38:54	Warning: 	Warning moved treated for www.sitepro.com.ar/robots.txt (real one is https://www.sitepro.com.ar/robots.txt)
+09:38:54	Warning: 	Moved Permanently for www.sitepro.com.ar/web/productos/firma-digital/etoken-safenet-5100/caracteristicas-del-producto/
+09:38:54	Warning: 	Redirected link is identical because of 'URL Hack' option: www.sitepro.com.ar/web/productos/firma-digital/etoken-safenet-5100/caracteristicas-del-producto/ and https://www.sitepro.com.ar/web/productos/firma-digital/etoken-safenet-5100/caracteristicas-del-producto/
+09:38:54	Warning: 	File has moved from www.sitepro.com.ar/web/productos/firma-digital/etoken-safenet-5100/caracteristicas-del-producto/ to https://www.sitepro.com.ar/web/productos/firma-digital/etoken-safenet-5100/caracteristicas-del-producto/
+09:38:54	Warning: 	Moved Permanently for www.sitepro.com.ar/web/productos/firma-digital/etoken-safenet-5100/especificaciones-tecnicas/
+09:38:54	Warning: 	Redirected link is identical because of 'URL Hack' option: www.sitepro.com.ar/web/productos/firma-digital/etoken-safenet-5100/especificaciones-tecnicas/ and https://www.sitepro.com.ar/web/productos/firma-digital/etoken-safenet-5100/especificaciones-tecnicas/
+09:38:54	Warning: 	File has moved from www.sitepro.com.ar/web/productos/firma-digital/etoken-safenet-5100/especificaciones-tecnicas/ to https://www.sitepro.com.ar/web/productos/firma-digital/etoken-safenet-5100/especificaciones-tecnicas/
+09:38:54	Warning: 	Moved Permanently for www.sitepro.com.ar/web/productos/firma-digital/etoken-safenet-5100/casos-de-exito/
+09:38:54	Warning: 	Redirected link is identical because of 'URL Hack' option: www.sitepro.com.ar/web/productos/firma-digital/etoken-safenet-5100/casos-de-exito/ and https://www.sitepro.com.ar/web/productos/firma-digital/etoken-safenet-5100/casos-de-exito/
+09:38:54	Warning: 	File has moved from www.sitepro.com.ar/web/productos/firma-digital/etoken-safenet-5100/casos-de-exito/ to https://www.sitepro.com.ar/web/productos/firma-digital/etoken-safenet-5100/casos-de-exito/
+09:38:54	Warning: 	Moved Permanently for www.sitepro.com.ar/web/solicitud-de-presupuesto-de-etoken-safenet-5110/
+09:38:54	Warning: 	Redirected link is identical because of 'URL Hack' option: www.sitepro.com.ar/web/solicitud-de-presupuesto-de-etoken-safenet-5110/ and https://www.sitepro.com.ar/web/solicitud-de-presupuesto-de-etoken-safenet-5110/
+09:38:54	Warning: 	File has moved from www.sitepro.com.ar/web/solicitud-de-presupuesto-de-etoken-safenet-5110/ to https://www.sitepro.com.ar/web/solicitud-de-presupuesto-de-etoken-safenet-5110/
+09:39:39	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=4283
+09:39:39	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=4283 to https://www.sitepro.com.ar/web/productos/firma-digital/idprime-md/
+09:39:39	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=4325
+09:39:39	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=4325 to https://www.sitepro.com.ar/web/productos/firma-digital/4identity/
+09:39:39	Warning: 	Moved Permanently for www.sitepro.com.ar/web/productos/firma-digital/4identity/caracteristicas-funcionales/
+09:39:39	Warning: 	Redirected link is identical because of 'URL Hack' option: www.sitepro.com.ar/web/productos/firma-digital/4identity/caracteristicas-funcionales/ and https://www.sitepro.com.ar/web/productos/firma-digital/4identity/caracteristicas-funcionales/
+09:39:39	Warning: 	File has moved from www.sitepro.com.ar/web/productos/firma-digital/4identity/caracteristicas-funcionales/ to https://www.sitepro.com.ar/web/productos/firma-digital/4identity/caracteristicas-funcionales/
+09:39:40	Warning: 	Moved Permanently for www.sitepro.com.ar/web/productos/firma-digital/4identity/caracteristicas-tecnicas/
+09:39:40	Warning: 	Redirected link is identical because of 'URL Hack' option: www.sitepro.com.ar/web/productos/firma-digital/4identity/caracteristicas-tecnicas/ and https://www.sitepro.com.ar/web/productos/firma-digital/4identity/caracteristicas-tecnicas/
+09:39:40	Warning: 	File has moved from www.sitepro.com.ar/web/productos/firma-digital/4identity/caracteristicas-tecnicas/ to https://www.sitepro.com.ar/web/productos/firma-digital/4identity/caracteristicas-tecnicas/
+09:39:40	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=7102
+09:39:40	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=7102 to https://www.sitepro.com.ar/web/productos/proteccion-de-datos/safenet-payment-hsm/
+09:39:43	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=6856
+09:39:43	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=6856 to https://www.sitepro.com.ar/web/productos/proteccion-de-datos/safenet-protectserver/
+09:39:47	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=4351
+09:39:47	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=4351 to https://www.sitepro.com.ar/web/productos/proteccion-de-datos/safenet-keysecure/
+09:39:51	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=4330
+09:39:51	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=4330 to https://www.sitepro.com.ar/web/productos/seguridad-en-hardware/luna-sa-5-x-hsm/
+09:39:51	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=4338
+09:39:51	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=4338 to https://www.sitepro.com.ar/web/product/hardware-de-seguridad-hsm/safenet-luna-sa/
+09:39:51	Warning: 	Moved Permanently for www.sitepro.com.ar/web/product/hardware-de-seguridad-hsm/safenet-luna-sa/beneficios-y-caracteristicas/
+09:39:51	Warning: 	Redirected link is identical because of 'URL Hack' option: www.sitepro.com.ar/web/product/hardware-de-seguridad-hsm/safenet-luna-sa/beneficios-y-caracteristicas/ and https://www.sitepro.com.ar/web/product/hardware-de-seguridad-hsm/safenet-luna-sa/beneficios-y-caracteristicas/
+09:39:51	Warning: 	File has moved from www.sitepro.com.ar/web/product/hardware-de-seguridad-hsm/safenet-luna-sa/beneficios-y-caracteristicas/ to https://www.sitepro.com.ar/web/product/hardware-de-seguridad-hsm/safenet-luna-sa/beneficios-y-caracteristicas/
+09:39:52	Warning: 	Moved Permanently for www.sitepro.com.ar/web/product/hardware-de-seguridad-hsm/safenet-luna-sa/especificaciones-tecnicas/
+09:39:52	Warning: 	Redirected link is identical because of 'URL Hack' option: www.sitepro.com.ar/web/product/hardware-de-seguridad-hsm/safenet-luna-sa/especificaciones-tecnicas/ and https://www.sitepro.com.ar/web/product/hardware-de-seguridad-hsm/safenet-luna-sa/especificaciones-tecnicas/
+09:39:52	Warning: 	File has moved from www.sitepro.com.ar/web/product/hardware-de-seguridad-hsm/safenet-luna-sa/especificaciones-tecnicas/ to https://www.sitepro.com.ar/web/product/hardware-de-seguridad-hsm/safenet-luna-sa/especificaciones-tecnicas/
+09:39:52	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=4343
+09:39:52	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=4343 to https://www.sitepro.com.ar/web/product/seguridad-en-hardware/luna-g5/
+09:39:52	Warning: 	Moved Permanently for www.sitepro.com.ar/web/product/seguridad-en-hardware/luna-g5/beneficios-de-seguridad/
+09:39:52	Warning: 	Redirected link is identical because of 'URL Hack' option: www.sitepro.com.ar/web/product/seguridad-en-hardware/luna-g5/beneficios-de-seguridad/ and https://www.sitepro.com.ar/web/product/seguridad-en-hardware/luna-g5/beneficios-de-seguridad/
+09:39:52	Warning: 	File has moved from www.sitepro.com.ar/web/product/seguridad-en-hardware/luna-g5/beneficios-de-seguridad/ to https://www.sitepro.com.ar/web/product/seguridad-en-hardware/luna-g5/beneficios-de-seguridad/
+09:39:52	Warning: 	Moved Permanently for www.sitepro.com.ar/web/product/seguridad-en-hardware/luna-g5/especificaciones-tecnicas/
+09:39:52	Warning: 	Redirected link is identical because of 'URL Hack' option: www.sitepro.com.ar/web/product/seguridad-en-hardware/luna-g5/especificaciones-tecnicas/ and https://www.sitepro.com.ar/web/product/seguridad-en-hardware/luna-g5/especificaciones-tecnicas/
+09:39:52	Warning: 	File has moved from www.sitepro.com.ar/web/product/seguridad-en-hardware/luna-g5/especificaciones-tecnicas/ to https://www.sitepro.com.ar/web/product/seguridad-en-hardware/luna-g5/especificaciones-tecnicas/
+09:39:52	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=4349
+09:39:52	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=4349 to https://www.sitepro.com.ar/web/product/hardware-de-seguridad-hsm/safenet-luna-pci/
+09:39:52	Warning: 	Moved Permanently for www.sitepro.com.ar/web/product/hardware-de-seguridad-hsm/safenet-luna-pci/caracteristicas-y-beneficios/
+09:39:52	Warning: 	Redirected link is identical because of 'URL Hack' option: www.sitepro.com.ar/web/product/hardware-de-seguridad-hsm/safenet-luna-pci/caracteristicas-y-beneficios/ and https://www.sitepro.com.ar/web/product/hardware-de-seguridad-hsm/safenet-luna-pci/caracteristicas-y-beneficios/
+09:39:52	Warning: 	File has moved from www.sitepro.com.ar/web/product/hardware-de-seguridad-hsm/safenet-luna-pci/caracteristicas-y-beneficios/ to https://www.sitepro.com.ar/web/product/hardware-de-seguridad-hsm/safenet-luna-pci/caracteristicas-y-beneficios/
+09:39:52	Warning: 	Moved Permanently for www.sitepro.com.ar/web/product/hardware-de-seguridad-hsm/safenet-luna-pci/especificaciones-tecnicas/
+09:39:52	Warning: 	Redirected link is identical because of 'URL Hack' option: www.sitepro.com.ar/web/product/hardware-de-seguridad-hsm/safenet-luna-pci/especificaciones-tecnicas/ and https://www.sitepro.com.ar/web/product/hardware-de-seguridad-hsm/safenet-luna-pci/especificaciones-tecnicas/
+09:39:52	Warning: 	File has moved from www.sitepro.com.ar/web/product/hardware-de-seguridad-hsm/safenet-luna-pci/especificaciones-tecnicas/ to https://www.sitepro.com.ar/web/product/hardware-de-seguridad-hsm/safenet-luna-pci/especificaciones-tecnicas/
+09:39:52	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=4362
+09:39:52	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=4362 to https://www.sitepro.com.ar/web/productos/autenticacion-de-usuarios/safenet-authentication-manager/
+09:39:52	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=4364
+09:39:52	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=4364 to https://www.sitepro.com.ar/web/productos/autenticacion-de-usuarios/dispositivos-otp/
+09:39:52	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=4366
+09:39:52	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=4366 to https://www.sitepro.com.ar/web/productos/autenticacion-de-usuarios/hardkey-mio/
+09:39:52	Warning: 	Moved Permanently for www.sitepro.com.ar/web/productos/autenticacion-de-usuarios/hardkey-mio/autenticacion-erp/
+09:39:52	Warning: 	Redirected link is identical because of 'URL Hack' option: www.sitepro.com.ar/web/productos/autenticacion-de-usuarios/hardkey-mio/autenticacion-erp/ and https://www.sitepro.com.ar/web/productos/autenticacion-de-usuarios/hardkey-mio/autenticacion-erp/
+09:39:52	Warning: 	File has moved from www.sitepro.com.ar/web/productos/autenticacion-de-usuarios/hardkey-mio/autenticacion-erp/ to https://www.sitepro.com.ar/web/productos/autenticacion-de-usuarios/hardkey-mio/autenticacion-erp/
+09:39:53	Warning: 	Moved Permanently for www.sitepro.com.ar/web/productos/autenticacion-de-usuarios/hardkey-mio/autenticacion-web/
+09:39:53	Warning: 	Redirected link is identical because of 'URL Hack' option: www.sitepro.com.ar/web/productos/autenticacion-de-usuarios/hardkey-mio/autenticacion-web/ and https://www.sitepro.com.ar/web/productos/autenticacion-de-usuarios/hardkey-mio/autenticacion-web/
+09:39:53	Warning: 	File has moved from www.sitepro.com.ar/web/productos/autenticacion-de-usuarios/hardkey-mio/autenticacion-web/ to https://www.sitepro.com.ar/web/productos/autenticacion-de-usuarios/hardkey-mio/autenticacion-web/
+09:39:53	Warning: 	Moved Permanently for www.sitepro.com.ar/web/productos/autenticacion-de-usuarios/hardkey-mio/caracteristicas-principales/
+09:39:53	Warning: 	Redirected link is identical because of 'URL Hack' option: www.sitepro.com.ar/web/productos/autenticacion-de-usuarios/hardkey-mio/caracteristicas-principales/ and https://www.sitepro.com.ar/web/productos/autenticacion-de-usuarios/hardkey-mio/caracteristicas-principales/
+09:39:53	Warning: 	File has moved from www.sitepro.com.ar/web/productos/autenticacion-de-usuarios/hardkey-mio/caracteristicas-principales/ to https://www.sitepro.com.ar/web/productos/autenticacion-de-usuarios/hardkey-mio/caracteristicas-principales/
+09:39:53	Warning: 	Moved Permanently for www.sitepro.com.ar/web/productos/autenticacion-de-usuarios/hardkey-mio/descripcion-del-sdk/
+09:39:53	Warning: 	Redirected link is identical because of 'URL Hack' option: www.sitepro.com.ar/web/productos/autenticacion-de-usuarios/hardkey-mio/descripcion-del-sdk/ and https://www.sitepro.com.ar/web/productos/autenticacion-de-usuarios/hardkey-mio/descripcion-del-sdk/
+09:39:53	Warning: 	File has moved from www.sitepro.com.ar/web/productos/autenticacion-de-usuarios/hardkey-mio/descripcion-del-sdk/ to https://www.sitepro.com.ar/web/productos/autenticacion-de-usuarios/hardkey-mio/descripcion-del-sdk/
+09:39:53	Error: 	"Not Found" (404) at link prueba.sitepro.com.ar/wp-content/uploads/2018/03/HARDkey-MIO_graf-300x89.png (from https://www.sitepro.com.ar/web/productos/autenticacion-de-usuarios/hardkey-mio/)
+09:39:53	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=4381
+09:39:53	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=4381 to https://www.sitepro.com.ar/web/productos/proteccion-de-software/llaves-hardkey/
+09:39:53	Warning: 	Moved Permanently for www.sitepro.com.ar/web/productos/proteccion-de-software/llaves-hardkey/metodos-de-proteccion/
+09:39:53	Warning: 	Redirected link is identical because of 'URL Hack' option: www.sitepro.com.ar/web/productos/proteccion-de-software/llaves-hardkey/metodos-de-proteccion/ and https://www.sitepro.com.ar/web/productos/proteccion-de-software/llaves-hardkey/metodos-de-proteccion/
+09:39:53	Warning: 	File has moved from www.sitepro.com.ar/web/productos/proteccion-de-software/llaves-hardkey/metodos-de-proteccion/ to https://www.sitepro.com.ar/web/productos/proteccion-de-software/llaves-hardkey/metodos-de-proteccion/
+09:39:53	Warning: 	Moved Permanently for www.sitepro.com.ar/web/productos/proteccion-de-software/llaves-hardkey/caracteristicas-principales/
+09:39:53	Warning: 	Redirected link is identical because of 'URL Hack' option: www.sitepro.com.ar/web/productos/proteccion-de-software/llaves-hardkey/caracteristicas-principales/ and https://www.sitepro.com.ar/web/productos/proteccion-de-software/llaves-hardkey/caracteristicas-principales/
+09:39:53	Warning: 	File has moved from www.sitepro.com.ar/web/productos/proteccion-de-software/llaves-hardkey/caracteristicas-principales/ to https://www.sitepro.com.ar/web/productos/proteccion-de-software/llaves-hardkey/caracteristicas-principales/
+09:39:53	Warning: 	Moved Permanently for www.sitepro.com.ar/web/productos/proteccion-de-software/llaves-hardkey/modelos-de-llaves/
+09:39:53	Warning: 	Redirected link is identical because of 'URL Hack' option: www.sitepro.com.ar/web/productos/proteccion-de-software/llaves-hardkey/modelos-de-llaves/ and https://www.sitepro.com.ar/web/productos/proteccion-de-software/llaves-hardkey/modelos-de-llaves/
+09:39:53	Warning: 	File has moved from www.sitepro.com.ar/web/productos/proteccion-de-software/llaves-hardkey/modelos-de-llaves/ to https://www.sitepro.com.ar/web/productos/proteccion-de-software/llaves-hardkey/modelos-de-llaves/
+09:39:53	Warning: 	Moved Permanently for www.sitepro.com.ar/web/productos/proteccion-de-software/llaves-hardkey/preguntas-frecuentes/
+09:39:53	Warning: 	Redirected link is identical because of 'URL Hack' option: www.sitepro.com.ar/web/productos/proteccion-de-software/llaves-hardkey/preguntas-frecuentes/ and https://www.sitepro.com.ar/web/productos/proteccion-de-software/llaves-hardkey/preguntas-frecuentes/
+09:39:53	Warning: 	File has moved from www.sitepro.com.ar/web/productos/proteccion-de-software/llaves-hardkey/preguntas-frecuentes/ to https://www.sitepro.com.ar/web/productos/proteccion-de-software/llaves-hardkey/preguntas-frecuentes/
+09:39:53	Warning: 	Moved Permanently for www.sitepro.com.ar/web/productos/proteccion-de-software/llaves-hardkey/hardkey-net-vs-hardkey-web/
+09:39:53	Warning: 	Redirected link is identical because of 'URL Hack' option: www.sitepro.com.ar/web/productos/proteccion-de-software/llaves-hardkey/hardkey-net-vs-hardkey-web/ and https://www.sitepro.com.ar/web/productos/proteccion-de-software/llaves-hardkey/hardkey-net-vs-hardkey-web/
+09:39:53	Warning: 	File has moved from www.sitepro.com.ar/web/productos/proteccion-de-software/llaves-hardkey/hardkey-net-vs-hardkey-web/ to https://www.sitepro.com.ar/web/productos/proteccion-de-software/llaves-hardkey/hardkey-net-vs-hardkey-web/
+09:39:53	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=4385
+09:39:53	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=4385 to https://www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/
+09:39:53	Warning: 	Moved Permanently for www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/descripcion/
+09:39:53	Warning: 	Redirected link is identical because of 'URL Hack' option: www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/descripcion/ and https://www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/descripcion/
+09:39:53	Warning: 	File has moved from www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/descripcion/ to https://www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/descripcion/
+09:39:54	Warning: 	Moved Permanently for www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/caracteristicas/
+09:39:54	Warning: 	Redirected link is identical because of 'URL Hack' option: www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/caracteristicas/ and https://www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/caracteristicas/
+09:39:54	Warning: 	File has moved from www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/caracteristicas/ to https://www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/caracteristicas/
+09:39:54	Warning: 	Moved Permanently for www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/como-funciona/
+09:39:54	Warning: 	Redirected link is identical because of 'URL Hack' option: www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/como-funciona/ and https://www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/como-funciona/
+09:39:54	Warning: 	File has moved from www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/como-funciona/ to https://www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/como-funciona/
+09:39:54	Warning: 	Moved Permanently for www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/gestion-del-ciclo-productivo/
+09:39:54	Warning: 	Redirected link is identical because of 'URL Hack' option: www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/gestion-del-ciclo-productivo/ and https://www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/gestion-del-ciclo-productivo/
+09:39:54	Warning: 	File has moved from www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/gestion-del-ciclo-productivo/ to https://www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/gestion-del-ciclo-productivo/
+09:39:54	Warning: 	Moved Permanently for www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/ventajas-y-beneficios/
+09:39:54	Warning: 	Redirected link is identical because of 'URL Hack' option: www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/ventajas-y-beneficios/ and https://www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/ventajas-y-beneficios/
+09:39:54	Warning: 	File has moved from www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/ventajas-y-beneficios/ to https://www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/ventajas-y-beneficios/
+09:39:54	Warning: 	Moved Permanently for www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/cuando-debo-usarla/
+09:39:54	Warning: 	Redirected link is identical because of 'URL Hack' option: www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/cuando-debo-usarla/ and https://www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/cuando-debo-usarla/
+09:39:54	Warning: 	File has moved from www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/cuando-debo-usarla/ to https://www.sitepro.com.ar/web/productos/proteccion-de-software/hardkey-web/cuando-debo-usarla/
+09:39:54	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=4235
+09:39:54	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=4235 to https://www.sitepro.com.ar/web/distribuidores/
+09:39:56	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=4257
+09:39:56	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=4257 to https://www.sitepro.com.ar/web/novedades/
+09:40:26	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=4238
+09:40:26	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=4238 to https://www.sitepro.com.ar/web/contacto/
+09:40:27	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=4242
+09:40:27	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=4242 to https://www.sitepro.com.ar/web/pago-online/
+09:40:33	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=6900
+09:40:33	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=6900 to https://www.sitepro.com.ar/web/preguntas-frecuentes/
+09:40:34	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=7114
+09:40:34	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=7114 to https://www.sitepro.com.ar/web/productos/proteccion-de-datos/safenet-payment-hsm/caracteristicas-y-beneficios/
+09:40:34	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=7110
+09:40:34	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=7110 to https://www.sitepro.com.ar/web/productos/proteccion-de-datos/safenet-payment-hsm/especificaciones-tecnicas/
+09:40:34	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=6865
+09:40:34	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=6865 to https://www.sitepro.com.ar/web/productos/proteccion-de-datos/safenet-protectserver/caracteristicas-y-beneficios/
+09:40:34	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=6876
+09:40:34	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=6876 to https://www.sitepro.com.ar/web/productos/proteccion-de-datos/safenet-protectserver/especificaciones-tecnicas/
+09:40:34	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=7058
+09:40:34	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=7058 to https://www.sitepro.com.ar/web/productos/proteccion-de-datos/safenet-keysecure/caracteristicas-y-beneficios/caracteristicas-y-beneficios/
+09:40:34	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=7049
+09:40:34	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=7049 to https://www.sitepro.com.ar/web/productos/proteccion-de-datos/safenet-keysecure/especificaciones-tecnicas/especificaciones-tecnicas/
+09:40:34	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=6904
+09:40:34	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=6904 to https://www.sitepro.com.ar/web/contacto-exterior/
+09:40:34	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=7170
+09:40:34	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=7170 to https://www.sitepro.com.ar/web/novedades/21-de-noviembre-2018-desayuno-en-peru-hardkey/
+09:40:34	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=7194
+09:40:34	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=7194 to https://www.sitepro.com.ar/web/novedades/04-de-septiempre-de-2018-infoscurity-hardkey/
+09:40:35	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=7208
+09:40:35	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=7208 to https://www.sitepro.com.ar/web/novedades/05-de-mayo-de-2018-infoscurity-hardkey/
+09:40:35	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=7216
+09:40:35	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=7216 to https://www.sitepro.com.ar/web/novedades/septiembre-de-2017-infoscurity-hardkey/
+09:40:35	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=7218
+09:40:35	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=7218 to https://www.sitepro.com.ar/web/novedades/mayo-de-2017-infoscurity-hardkey/
+09:40:35	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=7222
+09:40:35	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=7222 to https://www.sitepro.com.ar/web/novedades/abril-de-2017-infoscurity-hardkey/
+09:40:35	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=7265
+09:40:35	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=7265 to https://www.sitepro.com.ar/web/pago-online/pago-online-paypal/
+09:40:35	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=4250
+09:40:35	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=4250 to https://www.sitepro.com.ar/web/pago-online/cupon-de-pago-mp/
+09:40:36	Warning: 	Moved Permanently for https://www.sitepro.com.ar/web/?p=4248
+09:40:36	Warning: 	File has moved from https://www.sitepro.com.ar/web/?p=4248 to https://www.sitepro.com.ar/web/pago-online/pago-online-plataforma-decidir/
+
+HTTrack Website Copier/3.49-2 mirror complete in 3 minutes 43 seconds : 389 links scanned, 316 files written (25047543 bytes overall) [25412104 bytes received at 113955 bytes/sec], 1434 bytes transferred using HTTP compression in 3 files, ratio 104%, 8.0 requests per connection
+(7 errors, 160 warnings, 0 messages)
