@@ -871,6 +871,18 @@
 
 							<article id="post-4257" class="post-4257 page type-page status-publish hentry" style="padding:0px;">
 
+								<style media="screen">
+									.btn-inscripcion {
+										margin-top:30px;
+										font-size:20px;
+										font-family:'Roboto',sans-serif;
+									}
+									.btn-inscripcion:hover {
+										background-color:#49dfdf;
+										opacity: 1.0;
+									}
+								</style>
+
 								<!---ACÁ CAMBIOS--->
 
 								<div style="width:100%; height:400px; background-color:gray; text-align:center; display:flex; align-items:center; justify-content:center;"> <!---ACÁ BANNER--->
@@ -878,30 +890,73 @@
 										<span style="font-size:20px; font-family:'Roboto',sans-serif;">Próximo evento en x días</span>
 										<h1 style="font-size:50px; margin:30px 0 10px 0;" ><a href="#">Desayuno de trabajo</a></h1>
 										<h3>dia / lugar</h3>
-										<button style="margin-top:30px; font-size:20px; font-family:'Roboto',sans-serif;">Inscribirse</button>
+										<button class="btn-inscripcion">Inscribirse</button>
 									</div>
 								</div>
 
 								<h1 class="entry-title" style="font-size:22px; padding:30px 0px 15px 15px;">Eventos anteriores:</h1>
 
-								<div class="old-events-entries" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap;">
-									<style media="screen">
-										.old-entry {
-											width: 33%;
-											height: 250px;
-											margin: 0 0.2% 0.4% 0;
-											background-color: red;
-											color:white;
-										}
-									</style>
+								<style media="screen">
+									.old-entry {
+										width: 33%;
+										height: 250px;
+										margin: 0 0.2% 0.4% 0;
+										background-color: gray;
+										color:white;
+										display:flex;
+										align-items:flex-end;
+										font-family: 'Roboto',sans-serif;
+									}
+									*,
+									*::before,
+									*::after {
+									  box-sizing: border-box;
+									}
+									.entry-date {
+										width: 100%;
+										height: 40px;
+										background-color: red;
+										color:white;
+										padding-left:10px;
+										font-size: 22px;
+										font-weight:bold;
+									}
+									.entry-place {
+										width: 100%;
+										height: 40px;
+										background-color: blue;
+										color:white;
+										padding-left:10px;
+									}
+								</style>
+
+								<script type="text/javascript">
+									var emptyCells, i;
+									$('.grid.with-empty-cells').each(function() {
+									emptyCells = [];
+									for (i = 0; i < $(this).find('.cell').length; i++) {
+										emptyCells.push($('<ul>', {
+											class: 'cell is-empty'
+										}));
+									}
+									$(this).append(emptyCells);
+									});
+								</script>
+
+								<div class="old-events-entries with-empty-cells" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap;">
+
+									<div class="old-entry">
+										<div style="width:100%;">
+											<div class="entry-date">Fecha</div>
+											<div class="entry-place">Lugar</div>
+										</div>
+									</div>
 
 									<div class="old-entry"></div>
 									<div class="old-entry"></div>
 									<div class="old-entry"></div>
+									<div class="old-entry"></div>
 
-									<div class="old-entry"></div>
-									<div class="old-entry"></div>
-									<div class="old-entry"></div>
 								</div>
 
 								<!---ACÁ LO VIEJO--->
