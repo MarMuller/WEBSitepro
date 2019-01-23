@@ -921,8 +921,8 @@
 										overflow: hidden;
 										position:relative;
 									}
-									.old-entry a:hover{
-
+									.old-entry a:hover .entry-image{
+										width: 150%;
 									}
 									.entry-image {
 										width: 100%;
