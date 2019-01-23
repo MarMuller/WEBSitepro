@@ -918,11 +918,26 @@
 										display:flex;
 										align-items:flex-end;
 										font-family: 'Roboto',sans-serif;
+										overflow: hidden;
+										position:relative;
+									}
+									.old-entry img {
+										width: 500%;
+										margin: 0;
+										position:absolute;
+									}
+									.entry-info {
+										padding-top:8px; 
+									  width: 100%;
+										background-color: black;
+										/* background-image: url(); */
+									  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 0 0 3px #000; */
+									  color: white;
+										z-index: 1;
 									}
 									.entry-date {
 										width: 100%;
 										height: 30px;
-										color:white;
 										padding-left:15px;
 										font-size: 22px;
 										font-weight:bold;
@@ -930,7 +945,6 @@
 									.entry-place {
 										width: 100%;
 										height: 35px;
-										color:white;
 										padding-left:15px;
 									}
 								</style>
@@ -938,19 +952,21 @@
 								<?php
 								// la info de las old olds entries está acá:
 								$entries = [
-									["date" => "12 de Septiembre", "place" => "Hotel Delux", "cover" => "images/image1.jpg"],
-									["date" => "5 de Octubre", "place" => "Hotel Love", "cover" => "images/image2.jpg"],
-									["date" => "25 de Diciembre", "place" => "Hotel Rich", "cover" => "images/image3.jpg"],
-									["date" => "12 de Septiembre", "place" => "Hotel Delux", "cover" => "images/image1.jpg"],
-									["date" => "5 de Octubre", "place" => "Hotel Love", "cover" => "images/image2.jpg"],
-									["date" => "25 de Diciembre", "place" => "Hotel Rich", "cover" => "images/image3.jpg"],
-									["date" => "12 de Septiembre", "place" => "Hotel Delux", "cover" => "images/image1.jpg"],
-									["date" => "5 de Octubre", "place" => "Hotel Love", "cover" => "images/image2.jpg"],
-									["date" => "25 de Diciembre", "place" => "Hotel Rich", "cover" => "images/image3.jpg"],
-									["date" => "12 de Septiembre", "place" => "Hotel Delux", "cover" => "images/image1.jpg"],
-									["date" => "25 de Diciembre", "place" => "Hotel Rich", "cover" => "images/image3.jpg"]
+									["date" => "12 de Septiembre", "place" => "Hotel Delux", "cover" => "../images/novedades/image1.jpg"],
+									["date" => "5 de Octubre", "place" => "Hotel Love", "cover" => "../images/novedades/image1.jpg"],
+									["date" => "25 de Diciembre", "place" => "Hotel Rich", "cover" => "../images/novedades/image1.jpg"],
+									["date" => "12 de Septiembre", "place" => "Hotel Delux", "cover" => "../images/novedades/image1.jpg"],
+									["date" => "5 de Octubre", "place" => "Hotel Love", "cover" => "../images/novedades/image1.jpg"],
+									["date" => "25 de Diciembre", "place" => "Hotel Rich", "cover" => "../images/novedades/image1.jpg"],
+									["date" => "12 de Septiembre", "place" => "Hotel Delux", "cover" => "../images/novedades/image1.jpg"],
+									["date" => "5 de Octubre", "place" => "Hotel Love", "cover" => "../images/novedades/image1.jpg"],
+									["date" => "25 de Diciembre", "place" => "Hotel Rich", "cover" => "../images/novedades/image1.jpg"],
+									["date" => "12 de Septiembre", "place" => "Hotel Delux", "cover" => "../images/novedades/image1.jpg"],
+									["date" => "25 de Diciembre", "place" => "Hotel Rich", "cover" => "../images/novedades/image1.jpg"]
 								];
 								?>
+
+								<!-- <img src="<?php echo $entries[1]["cover"] ?>" alt="no funcaaaaa"> -->
 
 								<div class="old-events-entries with-empty-cells">
 
@@ -959,11 +975,15 @@
 										$num = 0;
 										foreach ($entries as $entry) {
 										    echo '
-												<div class="old-entry" style="background-image: url("'.$entries[$num]["cover"].'");">
-													<div style="width:100%;">
+												<div class="old-entry">
+
+													<img src="'.$entries[1]["cover"].'" alt="error-imagen">
+
+													<div class="entry-info" style="width:100%;">
 														<div class="entry-date">'.$entries[$num]["date"].'</div>
 														<div class="entry-place">'.$entries[$num]["place"].'</div>
 													</div>
+
 												</div>
 												';
 
