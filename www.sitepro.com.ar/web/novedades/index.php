@@ -921,13 +921,20 @@
 										overflow: hidden;
 										position:relative;
 									}
-									.old-entry img {
-										width: 500%;
+									.old-entry a:hover{
+
+									}
+									.entry-image {
+										width: 100%;
+										position: absolute;
+									}
+									.entry-image img {
+										width: 100%;
 										margin: 0;
-										position:absolute;
+										position: relative;
 									}
 									.entry-info {
-										padding-top:8px; 
+										padding-top:8px;
 									  width: 100%;
 										background-color: black;
 										/* background-image: url(); */
@@ -977,11 +984,15 @@
 										    echo '
 												<div class="old-entry">
 
-													<img src="'.$entries[1]["cover"].'" alt="error-imagen">
+													<div class="entry-image">
+														<a href="#"><img src="'.$entries[$num]["cover"].'" alt="error-imagen"></a>
+													</div>
 
 													<div class="entry-info" style="width:100%;">
-														<div class="entry-date">'.$entries[$num]["date"].'</div>
-														<div class="entry-place">'.$entries[$num]["place"].'</div>
+														<a href="#">
+															<div class="entry-date">'.$entries[$num]["date"].'</div>
+															<div class="entry-place">'.$entries[$num]["place"].'</div>
+														</a>
 													</div>
 
 												</div>
