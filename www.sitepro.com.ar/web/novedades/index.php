@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es-AR">
 
 <!-- Mirrored from www.sitepro.com.ar/web/novedades/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Jan 2019 12:38:41 GMT -->
@@ -897,65 +898,79 @@
 								<h1 class="entry-title" style="font-size:22px; padding:30px 0px 15px 15px;">Eventos anteriores:</h1>
 
 								<style media="screen">
+									/*  contenedor >  */
+									.old-events-entries {
+										width: 100.7%;
+										display:flex;
+										justify-content: flex-start;
+										flex-wrap:wrap;
+										position:relative;
+										right: 2px;
+									}
+									/*  un item > */
 									.old-entry {
 										width: 33%;
+										min-width: 244px;
 										height: 250px;
-										margin: 0 0.2% 0.4% 0;
+										margin: 0 0 2px 2px;
 										background-color: gray;
 										color:white;
 										display:flex;
 										align-items:flex-end;
 										font-family: 'Roboto',sans-serif;
 									}
-									*,
-									*::before,
-									*::after {
-									  box-sizing: border-box;
-									}
 									.entry-date {
 										width: 100%;
-										height: 40px;
-										background-color: red;
+										height: 30px;
 										color:white;
-										padding-left:10px;
+										padding-left:15px;
 										font-size: 22px;
 										font-weight:bold;
 									}
 									.entry-place {
 										width: 100%;
-										height: 40px;
-										background-color: blue;
+										height: 35px;
 										color:white;
-										padding-left:10px;
+										padding-left:15px;
 									}
 								</style>
 
-								<script type="text/javascript">
-									var emptyCells, i;
-									$('.grid.with-empty-cells').each(function() {
-									emptyCells = [];
-									for (i = 0; i < $(this).find('.cell').length; i++) {
-										emptyCells.push($('<ul>', {
-											class: 'cell is-empty'
-										}));
-									}
-									$(this).append(emptyCells);
-									});
-								</script>
+								<?php
+								// la info de las old olds entries está acá:
+								$entries = [
+									["date" => "12 de Septiembre", "place" => "Hotel Delux", "cover" => "images/image1.jpg"],
+									["date" => "5 de Octubre", "place" => "Hotel Love", "cover" => "images/image2.jpg"],
+									["date" => "25 de Diciembre", "place" => "Hotel Rich", "cover" => "images/image3.jpg"],
+									["date" => "12 de Septiembre", "place" => "Hotel Delux", "cover" => "images/image1.jpg"],
+									["date" => "5 de Octubre", "place" => "Hotel Love", "cover" => "images/image2.jpg"],
+									["date" => "25 de Diciembre", "place" => "Hotel Rich", "cover" => "images/image3.jpg"],
+									["date" => "12 de Septiembre", "place" => "Hotel Delux", "cover" => "images/image1.jpg"],
+									["date" => "5 de Octubre", "place" => "Hotel Love", "cover" => "images/image2.jpg"],
+									["date" => "25 de Diciembre", "place" => "Hotel Rich", "cover" => "images/image3.jpg"],
+									["date" => "12 de Septiembre", "place" => "Hotel Delux", "cover" => "images/image1.jpg"],
+									["date" => "25 de Diciembre", "place" => "Hotel Rich", "cover" => "images/image3.jpg"]
+								];
+								?>
 
-								<div class="old-events-entries with-empty-cells" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap;">
+								<div class="old-events-entries with-empty-cells">
 
-									<div class="old-entry">
-										<div style="width:100%;">
-											<div class="entry-date">Fecha</div>
-											<div class="entry-place">Lugar</div>
-										</div>
-									</div>
+									<?php
+										$array = array(1, 2, 3, 4);
+										$num = 0;
+										foreach ($entries as $entry) {
+										    echo '
+												<div class="old-entry" style="background-image: url("'.$entries[$num]["cover"].'");">
+													<div style="width:100%;">
+														<div class="entry-date">'.$entries[$num]["date"].'</div>
+														<div class="entry-place">'.$entries[$num]["place"].'</div>
+													</div>
+												</div>
+												';
 
-									<div class="old-entry"></div>
-									<div class="old-entry"></div>
-									<div class="old-entry"></div>
-									<div class="old-entry"></div>
+												$num = $num + 1;
+										}
+
+									?>
 
 								</div>
 
