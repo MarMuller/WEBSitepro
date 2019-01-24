@@ -972,16 +972,17 @@
 								// la info de las old olds entries está acá:
 								$entries = [
 									["date" => "12 de Septiembre", "place" => "Hotel Delux", "cover" => "../images/novedades/image1.jpg"],
-									["date" => "5 de Octubre", "place" => "Hotel Love", "cover" => "../images/novedades/image1.jpg"],
-									["date" => "25 de Diciembre", "place" => "Hotel Rich", "cover" => "../images/novedades/image1.jpg"],
+									["date" => "5 de Octubre", "place" => "Hotel Love", "cover" => "../images/novedades/image2.jpg"],
+									["date" => "25 de Diciembre", "place" => "Hotel Rich", "cover" => "../images/novedades/image3.jpg"],
+									["date" => "12 de Septiembre", "place" => "Hotel Delux", "cover" => "../images/novedades/image4.jpg"],
+									["date" => "5 de Octubre", "place" => "Hotel Love", "cover" => "../images/novedades/image5.jpg"],
 									["date" => "12 de Septiembre", "place" => "Hotel Delux", "cover" => "../images/novedades/image1.jpg"],
-									["date" => "5 de Octubre", "place" => "Hotel Love", "cover" => "../images/novedades/image1.jpg"],
-									["date" => "25 de Diciembre", "place" => "Hotel Rich", "cover" => "../images/novedades/image1.jpg"],
+									["date" => "5 de Octubre", "place" => "Hotel Love", "cover" => "../images/novedades/image2.jpg"],
+									["date" => "25 de Diciembre", "place" => "Hotel Rich", "cover" => "../images/novedades/image3.jpg"],
+									["date" => "12 de Septiembre", "place" => "Hotel Delux", "cover" => "../images/novedades/image4.jpg"],
+									["date" => "5 de Octubre", "place" => "Hotel Love", "cover" => "../images/novedades/image5.jpg"],
 									["date" => "12 de Septiembre", "place" => "Hotel Delux", "cover" => "../images/novedades/image1.jpg"],
-									["date" => "5 de Octubre", "place" => "Hotel Love", "cover" => "../images/novedades/image1.jpg"],
-									["date" => "25 de Diciembre", "place" => "Hotel Rich", "cover" => "../images/novedades/image1.jpg"],
-									["date" => "12 de Septiembre", "place" => "Hotel Delux", "cover" => "../images/novedades/image1.jpg"],
-									["date" => "25 de Diciembre", "place" => "Hotel Rich", "cover" => "../images/novedades/image1.jpg"]
+									["date" => "5 de Octubre", "place" => "Hotel Love", "cover" => "../images/novedades/image2.jpg"]
 								];
 								?>
 
@@ -1200,7 +1201,7 @@
 			function bigImg(x) {
 				// console.log("mouseOver");
 			  // x.style.width = "125%";
-				x.style.transform = "scale(1.4)";
+				x.style.transform = "scale(1.35)";
 				x.style.transition = "1s";
 			}
 
