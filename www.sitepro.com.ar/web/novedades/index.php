@@ -907,13 +907,16 @@
 										position:relative;
 										right: 2px;
 									}
+									.old-events-entries a {
+										color:#fff;
+									}
 									/*  un item > */
 									.old-entry {
 										width: 33%;
 										min-width: 244px;
 										height: 250px;
 										margin: 0 0 2px 2px;
-										background-color: gray;
+										/* background-color: gray; */
 										color:white;
 										display:flex;
 										align-items:flex-end;
@@ -921,23 +924,27 @@
 										overflow: hidden;
 										position:relative;
 									}
-									.old-entry a:hover .entry-image{
-										width: 150%;
-									}
 									.entry-image {
 										width: 100%;
 										position: absolute;
+										text-align: center;
+										left: 0px;
+										top: 0px;
+										background-color: red;
 									}
 									.entry-image img {
-										width: 100%;
+										width: 200%;
 										margin: 0;
 										position: relative;
+										transform: scale(1.2);
+										top: 15px;
 									}
 									.entry-info {
 										padding-top:8px;
 									  width: 100%;
-										background-color: black;
-										/* background-image: url(); */
+										/* background-color: black; */
+										background-image: url('../images/bg/dark-trasparent-bg.png');
+										background-repeat: repeat;
 									  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 0 0 3px #000; */
 									  color: white;
 										z-index: 1;
@@ -946,14 +953,19 @@
 										width: 100%;
 										height: 30px;
 										padding-left:15px;
-										font-size: 22px;
-										font-weight:bold;
+										font-size: 20px;
+										/* font-weight:bold; */
 									}
 									.entry-place {
 										width: 100%;
 										height: 35px;
 										padding-left:15px;
+										color:#eee;
 									}
+									.entry-place a {
+										color:#eee;
+									}
+
 								</style>
 
 								<?php
@@ -977,22 +989,23 @@
 
 								<div class="old-events-entries with-empty-cells">
 
+									<!-- <div style="width:200px; height:200px; border: 1px black solid; background-image: url('../images/bg/dark-trasparent-bg.png');	background-repeat: repeat;">PRUEBA!</div> -->
+
 									<?php
-										$array = array(1, 2, 3, 4);
 										$num = 0;
 										foreach ($entries as $entry) {
 										    echo '
 												<div class="old-entry">
 
-													<div class="entry-image">
-														<a href="#"><img src="'.$entries[$num]["cover"].'" alt="error-imagen"></a>
-													</div>
-
-													<div class="entry-info" style="width:100%;">
+													<div class="entry-info">
 														<a href="#">
 															<div class="entry-date">'.$entries[$num]["date"].'</div>
 															<div class="entry-place">'.$entries[$num]["place"].'</div>
 														</a>
+													</div>
+
+													<div class="entry-image" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+														<a href="#"><img src="'.$entries[$num]["cover"].'" alt="error-imagen"></a>
 													</div>
 
 												</div>
@@ -1177,6 +1190,68 @@
 		</script>
 		<script type='text/javascript' src='../wp-content/themes/radiate/js/customaead.js?ver=5.0.3'></script>
 		<script type='text/javascript' src='../wp-includes/js/wp-embed.minaead.js?ver=5.0.3'></script>
+
+
+
+
+
+		<script type="text/javascript">
+
+			function bigImg(x) {
+				// console.log("mouseOver");
+			  // x.style.width = "125%";
+				x.style.transform = "scale(1.4)";
+				x.style.transition = "1s";
+			}
+
+			function normalImg(x) {
+				// console.log("mouseOut");
+			  // x.style.width = "100%";
+				x.style.transform = "scale(1.2)";
+				x.style.transition = "1s";
+			}
+
+		// 	.on('mouseover', function(){
+    //   $(this).children('.photo').css({'transform': 'scale('+ $(this).attr('data-scale') +')'});
+    // })
+    // .on('mouseout', function(){
+    //   $(this).children('.photo').css({'transform': 'scale(1)'});
+    // })
+
+			// var imgEntries = document.querySelectorAll(".entry-image");
+			//
+			// for (oneEntry of imgEntries) {
+			// 	var oneEntry = oneEntry;
+			// }
+			//
+			// imgEntries[n].onmouseover = function() {mouseOver(imgEntries, n)};
+			// imgEntries[n].onmouseout = function() {mouseOut(imgEntries, n)};
+			//
+			// // for (imgentry of imgentries) {
+			// //
+			// // 	console.log(imgentry);
+			// // 	//imgentry.style.width = "150%";
+			// //
+			// // }
+			//
+			// function mouseOver(array, n) {
+			// 	array[n].classList.add('img-selected');
+			// }
+			//
+			// function mouseOut(array, n) {
+			// 	array[n].classList.remove('img-selected');
+			// }
+			//
+			// imgEntries[n].onmouseover = function() {mouseOver(imgEntries, n)};
+			// imgEntries[n].onmouseout = function() {mouseOut(imgEntries, n)};
+
+		</script>
+
+
+
+
+
+
 
 </body>
 <!--BODY-->
