@@ -760,14 +760,14 @@
 	<script type="text/javascript">
 
 		//fill div with image
-		jQuery(document).ready(function($){
-			$(window).load(function() {
-				$('.entry-image').find('img').each(function() {
-						var imgClass = (this.width / this.height > 1) ? 'wide' : 'tall';
-						$(this).addClass(imgClass);
-				})
-			})
-		});
+		// jQuery(document).ready(function($){
+		// 	$(window).load(function() {
+		// 		$('.entry-image').find('img').each(function() {
+		// 				var imgClass = (this.width / this.height > 1) ? 'wide' : 'tall';
+		// 				$(this).addClass(imgClass);
+		// 		})
+		// 	})
+		// });
 
 	</script>
 
@@ -954,23 +954,31 @@
 										background-color: gray;
 									}
 									.entry-image img {
-										/* width: 200%; */
+										height: 250px;
 										margin: 0;
 										position: relative;
-										/* transform: scale(1.0); */
-										/* top: 15px; */
 										filter: grayscale(60%);
 									}
+									.cover {
+									  width: 100%;
+									  object-fit: cover;
+									}
+									/* .entry-image img {
+										margin: 0;
+										position: relative;
+										filter: grayscale(60%);
+										object-fit: cover;
+									}
 									.entry-image img.wide {
-
-								    min-height:100%;
+										max-width: 100%;
+								    max-height:100%;
 								    height: auto;
 									}
 									.entry-image img.tall {
 								    max-height: 100%;
 								    max-width: 100%;
 								    width: auto;
-									}
+									}  */
 
 									.entry-info {
 										padding-top:8px;
@@ -1041,7 +1049,7 @@
 													</div>
 
 													<div class="entry-image" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
-														<a href="#"><img src="'.$entries[$num]["cover"].'" alt="error-imagen"></a>
+														<a href="#"><img src="'.$entries[$num]["cover"].'" class="cover" alt="error-imagen"></a>
 													</div>
 
 												</div>
