@@ -756,8 +756,29 @@
 		}
 	}		</style>
 
+
+	<script type="text/javascript">
+
+		//fill div with image
+		jQuery(document).ready(function($){
+			$(window).load(function() {
+				$('.entry-image').find('img').each(function() {
+						var imgClass = (this.width / this.height > 1) ? 'wide' : 'tall';
+						$(this).addClass(imgClass);
+				})
+			})
+		});
+
+	</script>
+
+
 </head>
 <!--HEAD-->
+
+
+
+
+
 
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -930,15 +951,27 @@
 										text-align: center;
 										left: 0px;
 										top: 0px;
-										background-color: red;
+										background-color: gray;
 									}
 									.entry-image img {
-										width: 200%;
+										/* width: 200%; */
 										margin: 0;
 										position: relative;
-										transform: scale(1.2);
-										top: 15px;
+										/* transform: scale(1.0); */
+										/* top: 15px; */
+										filter: grayscale(60%);
 									}
+									.entry-image img.wide {
+
+								    min-height:100%;
+								    height: auto;
+									}
+									.entry-image img.tall {
+								    max-height: 100%;
+								    max-width: 100%;
+								    width: auto;
+									}
+
 									.entry-info {
 										padding-top:8px;
 									  width: 100%;
@@ -971,18 +1004,20 @@
 								<?php
 								// la info de las old olds entries está acá:
 								$entries = [
-									["date" => "12 de Septiembre", "place" => "Hotel Delux", "cover" => "../images/novedades/image1.jpg"],
-									["date" => "5 de Octubre", "place" => "Hotel Love", "cover" => "../images/novedades/image2.jpg"],
-									["date" => "25 de Diciembre", "place" => "Hotel Rich", "cover" => "../images/novedades/image3.jpg"],
-									["date" => "12 de Septiembre", "place" => "Hotel Delux", "cover" => "../images/novedades/image4.jpg"],
-									["date" => "5 de Octubre", "place" => "Hotel Love", "cover" => "../images/novedades/image5.jpg"],
-									["date" => "12 de Septiembre", "place" => "Hotel Delux", "cover" => "../images/novedades/image1.jpg"],
-									["date" => "5 de Octubre", "place" => "Hotel Love", "cover" => "../images/novedades/image2.jpg"],
-									["date" => "25 de Diciembre", "place" => "Hotel Rich", "cover" => "../images/novedades/image3.jpg"],
-									["date" => "12 de Septiembre", "place" => "Hotel Delux", "cover" => "../images/novedades/image4.jpg"],
-									["date" => "5 de Octubre", "place" => "Hotel Love", "cover" => "../images/novedades/image5.jpg"],
-									["date" => "12 de Septiembre", "place" => "Hotel Delux", "cover" => "../images/novedades/image1.jpg"],
-									["date" => "5 de Octubre", "place" => "Hotel Love", "cover" => "../images/novedades/image2.jpg"]
+									["date" => "21 de Noviembre, 2018", "place" => "??? (Perú)", "cover" => "../images/novedades/image1.jpg"],
+									["date" => "? de Septiembre, 2018", "place" => "Buenos Aires (Argentina)", "cover" => "../images/novedades/image2.jpg"],
+									["date" => "1 de Agosto, 2018", "place" => "??? (México)", "cover" => "../images/novedades/image3.jpg"],
+									["date" => "? de Mayo, 2018", "place" => "Lima (Perú)", "cover" => "../images/novedades/image4.jpg"],
+									["date" => "16 de Mayo, 2018", "place" => "??? (Perú)", "cover" => "../images/novedades/image5.jpg"],
+									["date" => "? de Septiembre, 2017", "place" => "Buenos Aires (Argentina)", "cover" => "../images/novedades/image1.jpg"],
+									["date" => "18 de Octubre, 2017", "place" => "??? (Perú)", "cover" => "../images/novedades/image2.jpg"],
+									["date" => "17 de Mayo, 2017", "place" => "??? (Perú)", "cover" => "../images/novedades/image3.jpg"],
+									["date" => "? de Mayo, 2017", "place" => "Lima (Perú)", "cover" => "../images/novedades/image4.jpg"],
+									["date" => "26 de Abril, 2017", "place" => "Bogotá (Colombia)", "cover" => "../images/novedades/image5.jpg"],
+									["date" => "? de Abril, 2017", "place" => "Bogotá (Colombia)", "cover" => "../images/novedades/image1.jpg"],
+									["date" => "12 de Octubre, 2016", "place" => "??? (Perú)", "cover" => "../images/novedades/image2.jpg"],
+									["date" => "27 de Abril, 2016", "place" => "??? (Perú)", "cover" => "../images/novedades/image2.jpg"],
+									["date" => "13 de Octubre,2015", "place" => "Lima (Perú)", "cover" => "../images/novedades/image2.jpg"]
 								];
 								?>
 
@@ -1198,53 +1233,24 @@
 
 		<script type="text/javascript">
 
+		//zoom in images
+
 			function bigImg(x) {
 				// console.log("mouseOver");
 			  // x.style.width = "125%";
-				x.style.transform = "scale(1.35)";
+				x.style.transform = "scale(1.2)";
+				x.style.filter = "none";
 				x.style.transition = "1s";
+
 			}
 
 			function normalImg(x) {
 				// console.log("mouseOut");
 			  // x.style.width = "100%";
-				x.style.transform = "scale(1.2)";
+				x.style.transform = "scale(1.0)";
+				x.style.filter = "grayscale(60%)";
 				x.style.transition = "1s";
 			}
-
-		// 	.on('mouseover', function(){
-    //   $(this).children('.photo').css({'transform': 'scale('+ $(this).attr('data-scale') +')'});
-    // })
-    // .on('mouseout', function(){
-    //   $(this).children('.photo').css({'transform': 'scale(1)'});
-    // })
-
-			// var imgEntries = document.querySelectorAll(".entry-image");
-			//
-			// for (oneEntry of imgEntries) {
-			// 	var oneEntry = oneEntry;
-			// }
-			//
-			// imgEntries[n].onmouseover = function() {mouseOver(imgEntries, n)};
-			// imgEntries[n].onmouseout = function() {mouseOut(imgEntries, n)};
-			//
-			// // for (imgentry of imgentries) {
-			// //
-			// // 	console.log(imgentry);
-			// // 	//imgentry.style.width = "150%";
-			// //
-			// // }
-			//
-			// function mouseOver(array, n) {
-			// 	array[n].classList.add('img-selected');
-			// }
-			//
-			// function mouseOut(array, n) {
-			// 	array[n].classList.remove('img-selected');
-			// }
-			//
-			// imgEntries[n].onmouseover = function() {mouseOver(imgEntries, n)};
-			// imgEntries[n].onmouseout = function() {mouseOut(imgEntries, n)};
 
 		</script>
 
