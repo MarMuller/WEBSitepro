@@ -711,7 +711,7 @@
 	@media screen and (max-width: 1000px) {
 		.entry-title {
 			text-align: center;
-			padding-left: 0;
+			padding: 30px 0px 15px 0px !important;
 		}
 	}
 
@@ -745,16 +745,13 @@
 
 
 	@media only screen and (max-width:400px) {
-		/* For mobile phones: */
-		.site-branding {
-			/* margin-left:-48px; */
-			/* float: left; */
-		}
 		.main-navigation {
 			margin-right:-5px;
 			float: right;
 		}
-	}		</style>
+	}
+
+</style>
 
 
 </head>
@@ -790,6 +787,23 @@
 
 				<div class="modifi">
 
+					<style media="screen">
+						.site-branding {
+							/* margin-left:-48px; */
+							/* float: left; */
+						}
+						@media (max-width: 1024px) {
+							/* For mobile phones: */
+							.site-branding {
+								margin-left: 10px;
+							}
+							.main-navigation {
+								margin-right:-5px;
+								float: right;
+							}
+						}
+					</style>
+
 					<div class="site-branding">
 							<a href="../index.html" class="site-logo-link" rel="home"><img width="143" height="58" src="../wp-content/uploads/2018/08/cropped-logo-sitepro10ba7.png?w=143" alt="" data-size="radiate-logo" data-attachment-id="620" data-permalink="https://www.sitepro.com.ar/web/wp-content/uploads/2018/08/cropped-logo-sitepro1.png" data-orig-file="https://www.sitepro.com.ar/web/wp-content/uploads/2018/08/cropped-logo-sitepro1.png" data-orig-size="143,58" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="logo sitepro chico 2" data-image-description="" data-medium-file="https://www.sitepro.com.ar/web/wp-content/uploads/2018/08/cropped-logo-sitepro1.png?w=143" data-large-file="https://www.sitepro.com.ar/web/wp-content/uploads/2018/08/cropped-logo-sitepro1.png?w=143" srcset="https://www.sitepro.com.ar/web/wp-content/uploads/2018/08/cropped-logo-sitepro1.png?w=143&amp;zoom=2 2x" scale="2"></a>
 
@@ -809,6 +823,14 @@
 					</form>
 
 					<nav id="site-navigation" class="main-navigation" role="navigation">
+
+						<style media="screen">
+							@media (max-width: 1024px) and (min-width: 765px) {
+								.menu-primary-container a{
+									padding: 0 16px;
+								}
+							}
+						</style>
 
 						<h4 class="menu-toggle"></h4>
 						<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
@@ -855,7 +877,7 @@
 									</ul>
 								</li>
 								<li id="menu-item-5531" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5531"><a href="../distribuidores/index.html">Distribuidores</a></li>
-								<li id="menu-item-5534" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4257 current_page_item menu-item-5534"><a href="index.html">Novedades</a></li>
+								<li id="menu-item-5534" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4257 current_page_item menu-item-5534"><a href="index.php">Novedades</a></li>
 								<li id="menu-item-5532" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5532"><a href="../contacto/index.html">Contacto</a></li>
 								<li id="menu-item-5533" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5533"><a href="../pago-online/index.html">Pago Online</a></li>
 							</ul>
@@ -890,18 +912,91 @@
 									}
 								</style>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 								<!-- ACÁ CAMBIOS------------------------------------------>
 
-								<div style="width:100%; height:400px; background-color:gray; text-align:center; display:flex; align-items:center; justify-content:center;"> <!---ACÁ BANNER--->
+								<style media="screen">
+
+									#news-banner {
+										width:100%;
+										height:400px;
+										background-image:url('../images/novedades/banner/evento_desayuno_1.png');
+										background-size:cover;
+										background-position: center;
+										background-color:gray;
+										text-align:center;
+										display:flex;
+										align-items:center;
+										justify-content:center;
+									}
+
+									#news-banner span {
+										font-size:20px;
+										font-family:'Roboto',sans-serif;
+									}
+
+									#news-banner h1 {
+										font-size:50px;
+										line-height: 48px;
+										margin:30px 0 10px 0;
+									}
+
+									@media (max-width: 425px){
+										#news-banner {
+											height:300px;
+										}
+										#news-banner span {
+											font-size:18px;
+											font-family:'Roboto',sans-serif;
+										}
+										#news-banner h1 {
+											font-size:30px;
+											line-height: 45px;
+											margin:10px 0 0px 0;
+											font-weight: bold;
+										}
+										#news-banner h3 {
+											font-size:18px;
+										}
+										#news-banner button {
+											margin-top: 20px;
+										}
+									}
+
+								</style>
+
+								<div id="news-banner" > <!---ACÁ BANNER--->
 									<div style="color:white;">
-										<span style="font-size:20px; font-family:'Roboto',sans-serif;">Próximo evento en x días</span>
-										<h1 style="font-size:50px; line-height: 48px; margin:30px 0 10px 0;" ><a href="#">Desayuno de trabajo</a></h1>
+										<span class="daysLeft">
+
+											<?php
+											$eventDate=strtotime("03/15/2019 "); // Formato: mm/dd/YYYY
+											$daysLeft=ceil(($eventDate-time())/60/60/24);
+											echo "Próximo evento en " . $daysLeft ." días.";
+											?>
+
+										</span>
+										<h1><a href="next-event.php">Desayuno de trabajo</a></h1>
 										<h3>dia / lugar</h3>
-										<button class="btn-inscripcion">Inscribirse</button>
+										<button class="btn-inscripcion" onclick="window.location='next-event.php';" >Inscribirse</button>
 									</div>
 								</div>
 
-								<h1 class="entry-title" style="font-size:22px; padding:30px 0px 15px 15px;">Eventos anteriores:</h1>
+								<h1 class="entry-title" style="font-size:22px; padding:30px 0px 15px 15px;">Eventos anteriores</h1>
 
 								<style media="screen">
 									/*  contenedor >  */
@@ -1047,104 +1142,7 @@
 
 								<!---ACÁ LO VIEJO--->
 
-			   				<header class="entry-header">
-			               <h1 class="entry-title">Novedades</h1>
-			         	</header><!-- .entry-header -->
-
-								<div class="entry-content">
-									<div style="overflow: hidden;">
-
-										<div id="lista2" class="menuu">
-											<aside id="custom_html-17" class="widget_text widget widget_custom_html amr_widget"><div class="textwidget custom-html-widget">
-												<ul>
-		 											<li><a href="21-de-noviembre-2018-desayuno-en-peru-hardkey/index.html">• 21 de Noviembre de 2018 Desayuno en Perú: HARDkey</a></li>
-	 												<li><a href="04-de-septiempre-de-2018-infoscurity-hardkey/index.html">• Septiembre de 2018 Infoscurity Buenos Aires: HARDkey</a></li>
-	 												<li><a href="http://sitepro.com.ar/web/novedades/01-de-Agosto-2018-desayuno-en-mexico-hardkey">• 01 de Agosto de 2018 Desayuno en Mexico: HARDkey</a></li>
-		 											<li><a href="05-de-mayo-de-2018-infoscurity-hardkey/index.html">• Mayo de 2018 Infoscurity Lima: HARDkey</a></li>
-	 												<li><a href="http://sitepro.com.ar/web/novedades/16-de-Mayo-2018-desayuno-en-peru-hardkey">• 16 de Mayo de 2018 Desayuno en Perú: HARDkey</a></li>
-			 										<li><a href="septiembre-de-2017-infoscurity-hardkey/index.html">• Septiembre de 2017 Infoscurity Buenos Aires: HARDkey</a></li>
-	 												<li><a href="http://sitepro.com.ar/web//novedades/18-de-octubre-2017-desayuno-en-peru-hardkey">• 18 de Octubre de 2017 Desayuno en Perú: HARDkey</a></li>
-	 												<li><a href="http://sitepro.com.ar/web/novedades/17-de-mayo-de-2017-desayuno-en-peru-hardkey/">• 17 de Mayo de 2017 Desayuno en Perú: HARDkey y Bit4id</a></li>
-				 									<li><a href="mayo-de-2017-infoscurity-hardkey/index.html">• Mayo de 2017 Infoscurity Lima: HARDkey</a></li>
-	 												<li><a href="http://sitepro.com.ar/web/novedades/26-de-abril-de-2017-desayuno-en-bogota-hardkey-y-bit4id/">• 26 de Abril de 2017 - Desayuno en Bogotá: HARDkey y Bit4id</a></li>
-		 											<li><a href="abril-de-2017-infoscurity-hardkey/index.html">• Abril de 2017 - Infoscurity Bogotá: HARDkey y Bit4id</a></li>
-	 												<li><a href="http://sitepro.com.ar/web/novedades/12-de-octubre-de-2016-2do-desayuno-de-trabajo-en-peru/">• 12 de Octubre de 2016 2do Desayuno de Trabajo en Perú</a></li>
-	 												<li><a href="http://sitepro.com.ar/web/novedades/27-de-abril-de-2016-1er-desayuno-de-trabajo-en-peru/">• 27 de Abril de 2016 - 1er Desayuno de trabajo en Perú</a></li>
-	 												<li><a href="http://sitepro.com.ar/web/novedades/13-de-octubre-2do-desayuno-de-trabajo-lima-peru-2015-telesign-y-hardkey/">• 13 de Octubre - 2do Desayuno de Trabajo Lima Perú 2015 - TeleSign y HARDkey</a></li>
-												</ul>
-											</div>
-										</aside>
-									</div>
-
-									<div class="main">
-										<p> 
-											<img class="alignnone size-large wp-image-6428" src="../wp-content/uploads/2018/10/unnamed-1.png" alt="" width="768" height="622" />
-										</p>
-
-										<div id="divHijo">
-											<p>
-												<span style="color: #191919; font-family: Tahoma, Geneva, sans-serif; font-size: small;">
-													Estimados,
-												</span>
-
-											</p>
-											<p>
-												<span style="color: #191919; font-family: Tahoma, Geneva, sans-serif; font-size: small;">
-													Estaré nuevamente en la ciudad de Lima del 19 al 23 de Noviembre y quisiera invitarlos al Desayuno de Trabajo que estamos organizando para el día <strong>Miércoles, 21 de Noviembre</strong> a las <strong>8:30 hs</strong>, en el <strong>Hotels Del Pilar</strong>, Pasaje Mártir Olaya N° 141 &#8211; Miraflores.<br />
-											De no poder asistir al desayuno, podemos coordinar una entrevista individual en los días <strong>Jueves 22 o Viernes 23</strong>, favor de indicar su disponibilidad de horarios en esas fechas.<br />
-												</span>
-											</p>
-
-											<p>
-												<span style="color: #191919; font-family: Tahoma, Geneva, sans-serif; font-size: small;">Para registrarse al Desayuno, utilice el siguiente link:</span>
-											</p>
-
-											<form action="https://www.sitepro.com.ar/web/formulario-de-registro__1/?mkt_hm=1&amp;utm_source=email_marketing&amp;utm_admin=16256&amp;utm_medium=email&amp;utm_campaign=Invitacin_a_Evento_HARDkey_como_proteccin_de_software_y_evitar_accesos_usuarios_no_autorizados" target="_blank">
-												<input id="btnfolletos" type="submit" value="Registrarse" /><br />
-											</form>
-
-										</div>
-
-										<div id="divHijo">
-											<p>
-												<img class="alignnone size-large wp-image-6428" src="../wp-content/uploads/2018/10/unnamed-2.png" alt="" width="768" height="622" />
-											</p>
-											<p>
-												<span style="color: #191919; font-family: Tahoma, Geneva, sans-serif; font-size: small;">En el desayuno de trabajo,</span>
-											</p>
-											<p>
-												<span style="color: #191919; font-family: Tahoma, Geneva, sans-serif; font-size: small;">Presentaremos soluciones de Protección de Software y Autenticación Fuerte de Usuarios basadas en nuestras llaves HARDkey,
-											</p>
-											<p>
-												<span style="color: #191919; font-family: Tahoma, Geneva, sans-serif; font-size: small;">Protección de software, licenciamiento controlado, protección de la propiedad intelectual y todo tipo de desarrollo de software:<br />
-												&#8211; 1 llave HARDkey = 1 Licencia<br />
-												&#8211; Administrar y Controlar Ventas en Cuotas o Leasing de Software<br />
-												&#8211; Opción con reloj interno de tiempo real (RTC), actualizable remotamente<br />
-												&#8211; Potenciar y controlar la comercialización por medio de canales, fomentando la exportación de software en forma segura.<br />
-												&#8211; Autentificación fuerte de accesos de usuarios para hacer viables y seguros esquemas SOA, SaaS, accesos de administradores y técnicos, &#8220;Cloud Computing&#8221;<br />
-												&#8211; Validación fuerte de accesos de usuarios a aplicaciones, cumpliendo la norma ISO 17799/27001
-											</p>
-											<p>
-												<span style="color: #191919; font-family: Tahoma, Geneva, sans-serif; font-size: small;">Para más información sobre nuestras soluciones de protección, pueden visitar los siguientes enlaces:</span><br />
-												<span style="color: #191919; font-family: Tahoma, Geneva, sans-serif; font-size: small;"><a href="https://www.hardkey.com.ar/" >www.hardkey.com.ar</a></span></p>
-												<form action="https://www.sitepro.com.ar/descargas/Folletos/Propuesta_Integral_HARDkey.pdf" target="_blank">
-													<input id="btnfolletos" type="submit" value="Folleto" /><br />
-												</form>
-											</p>
-										</div>
-
-										<div id="divHijo">
-											<p><span style="color: #191919; font-family: Tahoma, Geneva, sans-serif; font-size: small;">INFORMACIÓN DEL EVENTO</span></p>
-											<p><span style="color: #191919; font-family: Tahoma, Geneva, sans-serif; font-size: small;">Miércoles 21 de Noviembre • Horario: 8:30 horas.<br />
-											Hotels Del Pilar, Pasaje Mártir Olaya N° 141 &#8211; Miraflores, Perú</p>
-											<p><span style="color: #191919; font-family: Tahoma, Geneva, sans-serif; font-size: small;">CAPACIDAD LIMITADA</span>
-										</div>
-									</div>
-								</div>
-							</div><!-- .entry-content -->
 						</article><!-- #post-## -->
-
-
 
 						</main><!-- #main -->
 					</div><!-- #primary -->
@@ -1153,6 +1151,7 @@
 
 				</div><!-- .inner-wrap -->
 		</div><!-- #content -->
+
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
 
@@ -1219,12 +1218,9 @@
 		<script type='text/javascript' src='../wp-includes/js/wp-embed.minaead.js?ver=5.0.3'></script>
 
 
-
-
-
 		<script type="text/javascript">
 
-		//zoom in images
+			//zoom in images
 
 			function bigImg(x) {
 				// console.log("mouseOver");
@@ -1232,9 +1228,7 @@
 				x.style.transform = "scale(1.2)";
 				x.style.filter = "none";
 				x.style.transition = "1s";
-
 			}
-
 			function normalImg(x) {
 				// console.log("mouseOut");
 			  // x.style.width = "100%";
