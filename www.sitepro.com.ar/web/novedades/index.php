@@ -757,21 +757,6 @@
 	}		</style>
 
 
-	<script type="text/javascript">
-
-		//fill div with image
-		// jQuery(document).ready(function($){
-		// 	$(window).load(function() {
-		// 		$('.entry-image').find('img').each(function() {
-		// 				var imgClass = (this.width / this.height > 1) ? 'wide' : 'tall';
-		// 				$(this).addClass(imgClass);
-		// 		})
-		// 	})
-		// });
-
-	</script>
-
-
 </head>
 <!--HEAD-->
 
@@ -905,12 +890,12 @@
 									}
 								</style>
 
-								<!---ACÁ CAMBIOS--->
+								<!-- ACÁ CAMBIOS------------------------------------------>
 
 								<div style="width:100%; height:400px; background-color:gray; text-align:center; display:flex; align-items:center; justify-content:center;"> <!---ACÁ BANNER--->
 									<div style="color:white;">
 										<span style="font-size:20px; font-family:'Roboto',sans-serif;">Próximo evento en x días</span>
-										<h1 style="font-size:50px; margin:30px 0 10px 0;" ><a href="#">Desayuno de trabajo</a></h1>
+										<h1 style="font-size:50px; line-height: 48px; margin:30px 0 10px 0;" ><a href="#">Desayuno de trabajo</a></h1>
 										<h3>dia / lugar</h3>
 										<button class="btn-inscripcion">Inscribirse</button>
 									</div>
@@ -963,22 +948,6 @@
 									  width: 100%;
 									  object-fit: cover;
 									}
-									/* .entry-image img {
-										margin: 0;
-										position: relative;
-										filter: grayscale(60%);
-										object-fit: cover;
-									}
-									.entry-image img.wide {
-										max-width: 100%;
-								    max-height:100%;
-								    height: auto;
-									}
-									.entry-image img.tall {
-								    max-height: 100%;
-								    max-width: 100%;
-								    width: auto;
-									}  */
 
 									.entry-info {
 										padding-top:8px;
@@ -1005,6 +974,20 @@
 									}
 									.entry-place a {
 										color:#eee;
+									}
+
+									@media (max-width: 768px){
+										.old-entry {
+											width: 100%;
+											min-width: 244px;
+											height: 250px;
+										}
+										.entry-image {
+											width: 100%;
+										}
+										.entry-image img {
+											height: 250px;
+										}
 									}
 
 								</style>
