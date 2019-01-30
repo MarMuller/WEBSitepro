@@ -1040,12 +1040,21 @@
 										margin: 0;
 										position: relative;
 										transform: scale(1.0);
-										filter: grayscale(100%);
 										transition: 0.5s ease-out;
 									}
 									.cover {
 									  width: 100%;
 									  object-fit: cover;
+									}
+
+									.grayfilter{
+										filter: grayscale(80%);
+										transition: 0.5s ease-out;
+									}
+
+									.alterfilter{
+										filter: grayscale(50%);
+										transition: 0.5s ease-out;
 									}
 
 									.entry-info {
@@ -1132,7 +1141,7 @@
 														</a>
 													</div>
 
-													<div class="entry-image" >
+													<div class="entry-image grayfilter" >
 														<img src="'.$entries[$num]["cover"].'" class="cover" alt="error-imagen">
 													</div>
 
@@ -1232,14 +1241,18 @@
 				// console.log("mouseOver");
 			  // x.style.width = "125%";
 				x.style.transform = "scale(1.1)";
-				x.style.filter = "grayscale(0%)";
+				//x.style.filter = "grayscale(0%)"; alterfilter
+				x.classList.remove("grayfilter");
+				x.classList.add("alterfilter");
 				x.style.transition = "0.5s ease-out";
 			}
 			function normalImg(x) {
 				// console.log("mouseOut");
 			  // x.style.width = "100%";
 				x.style.transform = "scale(1.0)";
-				x.style.filter = "grayscale(100%)";
+				//x.style.filter = "grayscale(100%)";
+				x.classList.add("grayfilter");
+				x.classList.remove("alterfilter");
 				x.style.transition = "0.5s ease-out";
 			}
 
