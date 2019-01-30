@@ -984,14 +984,15 @@
 										<span class="daysLeft">
 
 											<?php
-											$eventDate=strtotime("03/15/2019 "); // Formato: mm/dd/YYYY
+											$eventDate=strtotime("03/23/2019"); // Formato: mm/dd/YYYY
 											$daysLeft=ceil(($eventDate-time())/60/60/24);
 											echo "Próximo evento en " . $daysLeft ." días.";
 											?>
+											<br><a href="next-event.php"><i class="fa fa-angle-double-right"></i> más información <i class="fa fa-angle-double-left"></i></a></h1>
 
 										</span>
 										<h1><a href="next-event.php">Desayuno de trabajo</a></h1>
-										<h3>dia / lugar</h3>
+										<h3><a href="next-event.php" style="color:white;">23 de Marzo / Hotel San Martín</a></h3>
 										<button class="btn-inscripcion" onclick="window.location='next-event.php';" >Inscribirse</button>
 									</div>
 								</div>
@@ -1024,6 +1025,7 @@
 										font-family: 'Roboto',sans-serif;
 										overflow: hidden;
 										position:relative;
+										cursor: pointer;
 									}
 									.entry-image {
 										width: 100%;
@@ -1037,7 +1039,9 @@
 										height: 250px;
 										margin: 0;
 										position: relative;
-										filter: grayscale(60%);
+										transform: scale(1.0);
+										filter: grayscale(100%);
+										transition: 0.5s ease-out;
 									}
 									.cover {
 									  width: 100%;
@@ -1117,17 +1121,19 @@
 										$num = 0;
 										foreach ($entries as $entry) {
 										    echo '
-												<div class="old-entry">
+												<div class="old-entry" onclick="window.location=\'next-event.php\';" onmouseover="bigImg(this.children[2])" onmouseout="normalImg(this.children[2])">
+
+												 	<span style="font-size:25px; color:#ccc; position:absolute; bottom:6px; right:15px; z-index: 2;"><i class="fa fa-plus-square-o"></i></span>
 
 													<div class="entry-info">
-														<a href="#">
+														<a>
 															<div class="entry-date">'.$entries[$num]["date"].'</div>
 															<div class="entry-place">'.$entries[$num]["place"].'</div>
 														</a>
 													</div>
 
-													<div class="entry-image" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
-														<a href="#"><img src="'.$entries[$num]["cover"].'" class="cover" alt="error-imagen"></a>
+													<div class="entry-image" >
+														<img src="'.$entries[$num]["cover"].'" class="cover" alt="error-imagen">
 													</div>
 
 												</div>
@@ -1225,16 +1231,16 @@
 			function bigImg(x) {
 				// console.log("mouseOver");
 			  // x.style.width = "125%";
-				x.style.transform = "scale(1.2)";
-				x.style.filter = "none";
-				x.style.transition = "1s";
+				x.style.transform = "scale(1.1)";
+				x.style.filter = "grayscale(0%)";
+				x.style.transition = "0.5s ease-out";
 			}
 			function normalImg(x) {
 				// console.log("mouseOut");
 			  // x.style.width = "100%";
 				x.style.transform = "scale(1.0)";
-				x.style.filter = "grayscale(60%)";
-				x.style.transition = "1s";
+				x.style.filter = "grayscale(100%)";
+				x.style.transition = "0.5s ease-out";
 			}
 
 		</script>

@@ -910,6 +910,12 @@
 										background-color:#49dfdf;
 										opacity: 1.0;
 									}
+									.go-back{
+										text-align:left;
+										background-color:#666666;
+										padding:5px 10px;
+										font-family:'Roboto',sans-serif;
+									}
 								</style>
 
 
@@ -931,9 +937,25 @@
 
 								<style media="screen">
 
+									.blueheader{
+										background-color: #44cde2;
+										color: white;
+										text-align: center;
+										padding: 30px 0;
+									}
+
+									.blueheader h1{
+										font-size: 35px;
+										margin: 10px 0;
+									}
+
+									.blueheader h3 {
+										color: #eee;
+									}
+
 									.intro-event {
 										width: 100%;
-										padding: 30px;
+										/* padding: 30px; */
 										/* background-color: red; */
 									}
 
@@ -942,53 +964,172 @@
 										text-align: center;
 									}
 
-									.intro-event h1 {
-
+									.bloques{
+										width: 100%;
+										max-width: 800px;
+										margin: 0 auto;
+										display: flex;
+										justify-content: space-between;
+										/* background-color: #eee; */
+										font-size: 15px;
+										font-family: inherit;
+										font-family:'Roboto',sans-serif;
 									}
 
-									.intro-event p {
+									.bloques>* {
+										width: 200px;
+										padding: 20px 0;
+										/* background-color: #eee; */
+									}
 
+									.bloques>* a {
+										font-family:'Roboto',sans-serif;
+										transition: transform .3s ease-out;
+										display: inline-block;
+										text-decoration: none;
+									}
+
+									.bloques>* a:hover {
+										transform: translate(0, -5px);
+										text-decoration: none;
+									}
+
+									.bloques .divider {
+										width: 1px;
+										padding: 0;
+										border-left: 1px dotted #46bbe2;
+									}
+
+									.enlace {
+										color: #46bbe2;
+										margin: 0;
+									}
+
+									@media (max-width: 768px){
+										.intro-event {
+											padding: 30px;
+										}
 									}
 
 									@media (max-width: 425px){
 
+										.bloques{
+											width: 100%;
+											max-width: 800px;
+											margin: 0 auto;
+											display: block;
+											text-align: center;
+										}
+
+										.bloques>* {
+											width: 100%;
+										}
+
+										.bloques .divider {
+											display: none;
+										}
+
+										.blueheader h1{
+											font-size: 30px;
+										}
+
+										.blueheader h3 {
+											font-size: 20px;
+										}
 									}
 
 								</style>
 
-								<div class="intro-event">
-									<h3>00/00/00</h3>
-									<h1>Desayuno de trabajo</h1>
-									<h3>En un mundo ideal</h3>
+								<!-- Volver para atrás -->
+								<div class="go-back">
+									<a href="index.php" style="color:white;"><i class="fa fa-angle-double-left"></i> Volver a Novedades</a>
+								</div>
 
-									<h1 class="entry-title" style="font-size:22px; padding:0px;">Temática de la reunión</h1>
-									<p>
+								<div class="blueheader">
+									<h1>Desayuno de trabajo</h1>
+									<h3>Martes, 23 de Marzo</h3>
+								</div>
+
+								<div class="intro-event">
+
+									<br><br>
+
+									<p style="max-width: 800px; margin: 0 auto; font-size:14px; text-align:justify;">
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 									</p>
 
-									<h1 class="entry-title" style="font-size:22px; padding:0px;">¿Dónde se va a realizar?</h1>
-									<!-- Mapa de Ubicación -->
-									<div style="width: 100%"><iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(SItepro%20S.A.)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Map a route</a></iframe></div><br />
-									<!-- FIN Mapa de Ubicación -->
-
-									<h1 class="entry-title" style="font-size:22px; padding:0px;">Horario</h1>
-									<p>De 9:30hs a 12:30hs</p>
-									<a href="#">+ Agrendar</a>
-
-									<h1 class="entry-title" style="font-size:22px; padding:0px;">Estado</h1>
-									<p>**Vacantes Disponibles**</p>
-									<button class="btn-inscripcion" onclick="window.location='next-event.php';" >Inscribirse</button>
 									<br><br>
 
-									<p>(*)Aclaraciones: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									<div class="bloques">
 
-									<a href="#"><< Volver a Novedades</a>
+										<div>
+											<!-- <h1 class="entry-title" style="font-size:22px; padding:0px;">Lugar</h1> -->
+											<p><span style="color: #46bbe2;font-weight:bold;">Charla por: </span>Carlos H. Müller</p>
+											<a href="../quienes-somos/index.html" class="enlace" style="margin-top:0;"><i class="fa fa-angle-double-right"></i> Sobre nosotros</a>
+										</div>
 
+										<div class="divider"></div>
+
+										<div>
+											<!-- <h1 class="entry-title" style="font-size:22px; padding:0px;">Horario</h1> -->
+											<p><span style="color: #46bbe2;font-weight:bold;">Horario: </span>De 9:30hs a 12:30hs</p>
+											<a href="#" class="enlace" style="margin-top:0;"><i class="fa fa-angle-double-right"></i> Agendar</a>
+										</div>
+
+										<div class="divider"></div>
+
+										<div>
+											<!-- <h1 class="entry-title" style="font-size:22px; padding:0px;">Lugar</h1> -->
+											<p><span style="color: #46bbe2;font-weight:bold;">Lugar: </span>Hotel San Martin</p>
+											<a href="https://www.google.com/maps?ll=-34.632901,-58.400611&z=14&t=m&hl=en&gl=US&mapclient=embed&daddr=C%C3%A1tulo+Castillo+2630+C1261ACH+CABA@-34.6329011,-58.40061069999999" class="enlace" style="margin-top:0;"><i class="fa fa-angle-double-right"></i> ¿Cómo llego?</a>
+										</div>
+
+									</div>
+
+									<br><br>
+
+									<!-- Mapa de Ubicación -->
+									<div style="width: 100%;"><iframe width="100%" height="500" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=C%C3%A1tulo%20Castillo%202630%2C%20C1261ACF%20CABA%2C%20Argentina+(SItepro%20S.A.)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Map a route</a></iframe></div>
+									<!-- FIN Mapa de Ubicación -->
+
+									<br><br>
+
+									<div style="text-align:center;">
+										<h1 class="entry-title" style="font-size:22px; padding:0px; text-align:center;">Estado</h1>
+										<p style="color: green;">Vacantes Disponibles</p><br>
+										<button class="btn-inscripcion" onclick="window.location='next-event.php';" style="margin-top:0;">Inscribirse</button>
+										<br><br><br>
+										<p style="max-width: 800px; margin: 0 auto; text-align:justify; font-size:12px;"><b>*Aclaraciones:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										<br><br><br>
+									</div>
 
 								</div>
-								
+
+								<!-- Volver para atrás -->
+								<div class="go-back">
+									<a href="index.php" style="color:white;"><i class="fa fa-angle-double-left"></i> Volver a Novedades</a>
+								</div>
+
 
 						</article><!-- #post-## -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 						</main><!-- #main -->
 					</div><!-- #primary -->
