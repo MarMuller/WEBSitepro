@@ -910,6 +910,12 @@
 										background-color:#49dfdf;
 										opacity: 1.0;
 									}
+									.go-back{
+										text-align:left;
+										background-color:#666666;
+										padding:5px 10px;
+										font-family:'Roboto',sans-serif;
+									}
 								</style>
 
 
@@ -931,233 +937,257 @@
 
 								<style media="screen">
 
-									#news-banner {
-										width:100%;
-										height:400px;
-										background-image:url('../images/novedades/banner/evento_desayuno_1.png');
+									.blueheader{
+										background-color: #44cde2;
+										color: white;
+										text-align: center;
+										padding: 30px 0;
+									}
+
+									.blueheader h1{
+										font-size: 35px;
+										margin: 10px 0;
+									}
+
+									.blueheader h3 {
+										color: #eee;
+									}
+
+									.intro-event {
+										width: 100%;
+										/* padding: 30px; */
+										/* background-color: red; */
+									}
+
+									.intro-event h3 {
+										width: 100%;
+										text-align: center;
+									}
+
+									.stats {
+										width: 100%;
+										max-width: 800px;
+										margin: 0 auto;
+										display: flex;
+										justify-content: space-around;
+										/* background-color: #eee; */
+										font-size: 15px;
+										font-family: inherit;
+										font-family:'Roboto',sans-serif;
+										text-align: center;
+									}
+
+									.stats>* {
+										padding: 20px 0;
+									}
+
+									.stats .icon-stats {
+										margin-bottom: 30px;
+									}
+
+									.enlace {
+										color: #46bbe2;
+										margin: 0;
+									}
+
+									.old-entry-banner {
+										width: 100%;
+										height: 300px;
+										background-image:url('../images/novedades/image2.jpg');
 										background-size:cover;
 										background-position: center;
-										background-color:gray;
-										text-align:center;
-										display:flex;
-										align-items:center;
-										justify-content:center;
+										background-color: darkgray;
+										filter: grayscale(80%);
+										filter: opacity(0.8);
 									}
 
-									#news-banner span {
-										font-size:20px;
-										font-family:'Roboto',sans-serif;
-									}
-
-									#news-banner h1 {
-										font-size:50px;
-										line-height: 48px;
-										margin:30px 0 10px 0;
-									}
-
-									@media (max-width: 425px){
-										#news-banner {
-											height:300px;
-										}
-										#news-banner span {
-											font-size:18px;
-											font-family:'Roboto',sans-serif;
-										}
-										#news-banner h1 {
-											font-size:30px;
-											line-height: 45px;
-											margin:10px 0 0px 0;
-											font-weight: bold;
-										}
-										#news-banner h3 {
-											font-size:18px;
-										}
-										#news-banner button {
-											margin-top: 20px;
-										}
-									}
-
-								</style>
-
-								<div id="news-banner" > <!---ACÁ BANNER--->
-									<div style="color:white;">
-										<span class="daysLeft">
-
-											<?php
-											$eventDate=strtotime("03/23/2019"); // Formato: mm/dd/YYYY
-											$daysLeft=ceil(($eventDate-time())/60/60/24);
-											echo "Próximo evento en " . $daysLeft ." días.";
-											?>
-											<br><a href="next-event.php"><i class="fa fa-angle-double-right"></i> más información <i class="fa fa-angle-double-left"></i></a></h1>
-
-										</span>
-										<h1><a href="next-event.php">Desayuno de trabajo</a></h1>
-										<h3><a href="next-event.php" style="color:white;">23 de Marzo / Hotel San Martín</a></h3>
-										<button class="btn-inscripcion" onclick="window.location='next-event.php';" >Inscribirse</button>
-									</div>
-								</div>
-
-								<h1 class="entry-title" style="font-size:22px; padding:30px 0px 15px 15px;">Eventos anteriores</h1>
-
-								<style media="screen">
-									/*  contenedor >  */
-									.old-events-entries {
-										width: 100.7%;
-										display:flex;
-										justify-content: flex-start;
+									.entry-gallery {
+										background-color: lightgray;
+										width: 100%;
+										max-width: 800px;
+										height: auto;
+										margin: 0 auto;
+										padding: 6px 6px 0 6px;
+										display: flex;
+										justify-content: space-between;
 										flex-wrap:wrap;
-										position:relative;
-										right: 2px;
+										align-content: flex-start;
 									}
-									.old-events-entries a {
-										color:#fff;
-									}
-									/*  un item > */
-									.old-entry {
-										width: 33%;
-										min-width: 244px;
-										height: 250px;
-										margin: 0 0 2px 2px;
-										/* background-color: gray; */
-										color:white;
-										display:flex;
-										align-items:flex-end;
-										font-family: 'Roboto',sans-serif;
-										overflow: hidden;
-										position:relative;
+
+									.entry-gallery>* {
+										width: 49.5%;
 										cursor: pointer;
 									}
-									.entry-image {
+
+									.entry-gallery>* img{
+										background-color: blue;
 										width: 100%;
-										position: absolute;
-										text-align: center;
-										left: 0px;
-										top: 0px;
-										background-color: gray;
-									}
-									.entry-image img {
-										height: 250px;
-										margin: 0;
-										position: relative;
-										transform: scale(1.0);
-										transition: 0.5s ease-out;
-									}
-									.cover {
-									  width: 100%;
 									  object-fit: cover;
-									}
-
-									.grayfilter{
+										margin-top: 0px;
+										margin-bottom: 1px;
 										filter: grayscale(80%);
-										transition: 0.5s ease-out;
+										opacity: 0.8;
+										transition: all 0.5s ease-out;
 									}
 
-									.alterfilter{
-										filter: grayscale(50%);
-										transition: 0.5s ease-out;
-									}
-
-									.entry-info {
-										padding-top:8px;
-									  width: 100%;
-										/* background-color: black; */
-										background-image: url('../images/bg/dark-trasparent-bg.png');
-										background-repeat: repeat;
-									  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 0 0 3px #000; */
-									  color: white;
-										z-index: 1;
-									}
-									.entry-date {
-										width: 100%;
-										height: 30px;
-										padding-left:15px;
-										font-size: 20px;
-										/* font-weight:bold; */
-									}
-									.entry-place {
-										width: 100%;
-										height: 35px;
-										padding-left:15px;
-										color:#eee;
-									}
-									.entry-place a {
-										color:#eee;
+									.entry-gallery>* img:hover{
+										filter: grayscale(20%);
+										opacity: 1.0;
 									}
 
 									@media (max-width: 768px){
-										.old-entry {
-											width: 100%;
-											min-width: 244px;
-											height: 250px;
+										.intro-event {
+											padding: 30px;
 										}
-										.entry-image {
+									}
+
+									@media (max-width: 425px){
+
+										.stats{
+											width: 100%;
+											max-width: 800px;
+											margin: 0 auto;
+											display: block;
+											text-align: center;
+										}
+
+										.stats>* {
 											width: 100%;
 										}
-										.entry-image img {
-											height: 250px;
+
+										.stats>* .icon-stats{
+											margin: 0 auto;
+											margin-bottom: 30px;
+										}
+
+										.entry-gallery>* {
+											width: 100%;
+										}
+
+										.blueheader h1{
+											font-size: 30px;
+										}
+
+										.blueheader h3 {
+											font-size: 20px;
 										}
 									}
 
 								</style>
 
-								<?php
-								// la info de las old olds entries está acá:
-								$entries = [
-									["date" => "21 de Noviembre, 2018", "place" => "??? (Perú)", "cover" => "../images/novedades/image1.jpg"],
-									["date" => "? de Septiembre, 2018", "place" => "Buenos Aires (Argentina)", "cover" => "../images/novedades/image2.jpg"],
-									["date" => "1 de Agosto, 2018", "place" => "??? (México)", "cover" => "../images/novedades/image3.jpg"],
-									["date" => "? de Mayo, 2018", "place" => "Lima (Perú)", "cover" => "../images/novedades/image4.jpg"],
-									["date" => "16 de Mayo, 2018", "place" => "??? (Perú)", "cover" => "../images/novedades/image5.jpg"],
-									["date" => "? de Septiembre, 2017", "place" => "Buenos Aires (Argentina)", "cover" => "../images/novedades/image1.jpg"],
-									["date" => "18 de Octubre, 2017", "place" => "??? (Perú)", "cover" => "../images/novedades/image2.jpg"],
-									["date" => "17 de Mayo, 2017", "place" => "??? (Perú)", "cover" => "../images/novedades/image3.jpg"],
-									["date" => "? de Mayo, 2017", "place" => "Lima (Perú)", "cover" => "../images/novedades/image4.jpg"],
-									["date" => "26 de Abril, 2017", "place" => "Bogotá (Colombia)", "cover" => "../images/novedades/image5.jpg"],
-									["date" => "? de Abril, 2017", "place" => "Bogotá (Colombia)", "cover" => "../images/novedades/image1.jpg"],
-									["date" => "12 de Octubre, 2016", "place" => "??? (Perú)", "cover" => "../images/novedades/image2.jpg"],
-									["date" => "27 de Abril, 2016", "place" => "??? (Perú)", "cover" => "../images/novedades/image2.jpg"],
-									["date" => "13 de Octubre,2015", "place" => "Lima (Perú)", "cover" => "../images/novedades/image2.jpg"]
-								];
-								?>
+								<!-- Volver para atrás -->
+								<div class="go-back">
+									<a href="index.php" style="color:white;"><i class="fa fa-angle-double-left"></i> Volver a Novedades</a>
+								</div>
 
-								<!-- <img src="<?php echo $entries[1]["cover"] ?>" alt="no funcaaaaa"> -->
+								<div class="blueheader">
+									<h3>23/03/16</h3>
+									<h1>Hotel San Marcos</h1>
+								</div>
 
-								<div class="old-events-entries with-empty-cells">
+								<div class="old-entry-banner"></div>
 
-									<!-- <div style="width:200px; height:200px; border: 1px black solid; background-image: url('../images/bg/dark-trasparent-bg.png');	background-repeat: repeat;">PRUEBA!</div> -->
+								<div class="intro-event">
 
-									<?php
-										$num = 0;
-										foreach ($entries as $entry) {
-										    echo '
-												<div class="old-entry" onclick="window.location=\'previous-event.php\';" onmouseover="bigImg(this.children[2])" onmouseout="normalImg(this.children[2])">
+									<br><br>
 
-												 	<span style="font-size:25px; color:#ccc; position:absolute; bottom:6px; right:15px; z-index: 2;"><i class="fa fa-plus-square-o"></i></span>
+									<p style="max-width: 800px; margin: 0 auto; font-size:14px; text-align:justify;">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+									</p>
 
-													<div class="entry-info">
-														<a>
-															<div class="entry-date">'.$entries[$num]["date"].'</div>
-															<div class="entry-place">'.$entries[$num]["place"].'</div>
-														</a>
-													</div>
+									<br>
 
-													<div class="entry-image grayfilter" >
-														<img src="'.$entries[$num]["cover"].'" class="cover" alt="error-imagen">
-													</div>
+									<p style="max-width: 800px; margin: 0 auto; font-size:14px; text-align:justify;">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+									</p>
 
-												</div>
-												';
+									<br><br>
 
-												$num = $num + 1;
-										}
+									<div class="stats">
 
-									?>
+										<div>
+											<div class="icon-stats" style="width:120px; height:120px; background:red; border-radius: 100px;"></div>
+											<p style="color: #46bbe2;">Duración</p>
+											<p>2hs 3min</p>
+										</div>
+
+										<div>
+											<div class="icon-stats" style="width:120px; height:120px; background:red; border-radius: 100px;"></div>
+											<p style="color: #46bbe2;">Ponente</p>
+											<p>Carlos H. Müller<br>
+											<span>Presidente</span>
+											</p>
+										</div>
+
+										<div>
+											<div class="icon-stats" style="width:120px; height:120px; background:red; border-radius: 100px;"></div>
+											<p style="color: #46bbe2;">Público</p>
+											<p>250 personas</p>
+										</div>
+
+									</div>
+
+									<br>
+
+									<div class="entry-gallery">
+
+										<div class="">
+											<img src="../images/novedades/image2.jpg" alt="">
+										</div>
+
+										<div class="">
+											<img src="../images/novedades/image2.jpg" alt="">
+										</div>
+
+										<div class="">
+											<img src="../images/novedades/image2.jpg" alt="">
+										</div>
+
+										<div class="">
+											<img src="../images/novedades/image2.jpg" alt="">
+										</div>
+
+										<div class="">
+											<img src="../images/novedades/image2.jpg" alt="">
+										</div>
+
+									</div>
+
+									<br><br>
+
+									<!-- Mapa de Ubicación -->
+									<div style="width: 100%;"><iframe width="100%" height="500" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=C%C3%A1tulo%20Castillo%202630%2C%20C1261ACF%20CABA%2C%20Argentina+(SItepro%20S.A.)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Map a route</a></iframe></div>
+									<!-- FIN Mapa de Ubicación -->
 
 								</div>
 
-								<!---ACÁ LO VIEJO--->
+								<!-- Volver para atrás -->
+								<div class="go-back">
+									<a href="index.php" style="color:white;"><i class="fa fa-angle-double-left"></i> Volver a Novedades</a>
+								</div>
+
 
 						</article><!-- #post-## -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 						</main><!-- #main -->
 					</div><!-- #primary -->
@@ -1240,20 +1270,16 @@
 			function bigImg(x) {
 				// console.log("mouseOver");
 			  // x.style.width = "125%";
-				x.style.transform = "scale(1.1)";
-				//x.style.filter = "grayscale(0%)"; alterfilter
-				x.classList.remove("grayfilter");
-				x.classList.add("alterfilter");
-				x.style.transition = "0.5s ease-out";
+				x.style.transform = "scale(1.2)";
+				x.style.filter = "none";
+				x.style.transition = "1s";
 			}
 			function normalImg(x) {
 				// console.log("mouseOut");
 			  // x.style.width = "100%";
 				x.style.transform = "scale(1.0)";
-				//x.style.filter = "grayscale(100%)";
-				x.classList.add("grayfilter");
-				x.classList.remove("alterfilter");
-				x.style.transition = "0.5s ease-out";
+				x.style.filter = "grayscale(60%)";
+				x.style.transition = "1s";
 			}
 
 		</script>
