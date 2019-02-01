@@ -1004,7 +1004,6 @@
 									.old-entry-banner {
 										width: 100%;
 										height: 300px;
-										background-image:url('../images/novedades/image2.jpg');
 										background-size:cover;
 										background-position: center;
 										background-color: darkgray;
@@ -1086,32 +1085,29 @@
 
 								</style>
 
+								<?php
+								// la info de las old olds entries está acá:
+								include 'eventos/viejosEventos.php';
+								?>
+
 								<!-- Volver para atrás -->
 								<div class="go-back">
 									<a href="index.php" style="color:white;"><i class="fa fa-angle-double-left"></i> Volver a Novedades</a>
 								</div>
 
 								<div class="blueheader">
-									<h3>23/03/16</h3>
-									<h1>Hotel San Marcos</h1>
+									<h3><?php echo $entries[ $_GET["entryn"] ]["date"] ?></h3>
+									<h1><?php echo $entries[ $_GET["entryn"] ]["place"] ?></h1>
 								</div>
 
-								<div class="old-entry-banner"></div>
+								<div class="old-entry-banner" style="background-image:url('<?php echo $entries[ $_GET["entryn"] ]["cover"]?>');"></div>
 
 								<div class="intro-event">
 
 									<br><br>
 
 									<p style="max-width: 800px; margin: 0 auto; font-size:14px; text-align:justify;">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-									</p>
-
-									<br>
-
-									<p style="max-width: 800px; margin: 0 auto; font-size:14px; text-align:justify;">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										<?php echo $entries[ $_GET["entryn"] ]["info"] ?>
 									</p>
 
 									<br><br>
@@ -1121,21 +1117,20 @@
 										<div>
 											<div class="icon-stats" style="width:120px; height:120px; background:red; border-radius: 100px;"></div>
 											<p style="color: #46bbe2;">Duración</p>
-											<p>2hs 3min</p>
+											<p><?php echo $entries[ $_GET["entryn"] ]["lenght"] ?></p>
 										</div>
 
 										<div>
 											<div class="icon-stats" style="width:120px; height:120px; background:red; border-radius: 100px;"></div>
 											<p style="color: #46bbe2;">Ponente</p>
-											<p>Carlos H. Müller<br>
-											<span>Presidente</span>
+											<p><?php echo $entries[ $_GET["entryn"] ]["speaker"] ?><br>
 											</p>
 										</div>
 
 										<div>
 											<div class="icon-stats" style="width:120px; height:120px; background:red; border-radius: 100px;"></div>
 											<p style="color: #46bbe2;">Público</p>
-											<p>250 personas</p>
+											<p><?php echo $entries[ $_GET["entryn"] ]["listeners"] ?></p>
 										</div>
 
 									</div>
@@ -1144,7 +1139,7 @@
 
 									<div class="line-divider" style="max-width:800px;"></div>
 
-									<br>
+									<br><br>
 
 									<h1 class="entry-title" style="font-size:22px; padding:0px; text-align:center;">Galería de Fotos</h1>
 
@@ -1152,15 +1147,15 @@
 
 									<div class="entry-gallery">
 
-										<a href="../images/novedades/image2.jpg" data-lightbox="mygallery" data-title="Acá descripción"><img src="../images/novedades/image2.jpg" alt=""></a>
+										<?php
+											$photos = $entries[$_GET["entryn"]]["photos"];
+											foreach ($photos as $photo) {
+											    echo '
+													<a href="'.$photo.'" data-lightbox="mygallery" data-title="Acá descripción"><img src="'.$photo.'" alt=""></a>
+													';
+											}
 
-										<a href="../images/novedades/image1.jpg" data-lightbox="mygallery" data-title="Acá descripción"><img src="../images/novedades/image1.jpg" alt=""></a>
-
-										<a href="../images/novedades/image3.jpg" data-lightbox="mygallery" data-title="Acá descripción"><img src="../images/novedades/image3.jpg" alt=""></a>
-
-										<a href="../images/novedades/image1.jpg" data-lightbox="mygallery" data-title="Acá descripción"><img src="../images/novedades/image1.jpg" alt=""></a>
-
-										<a href="../images/novedades/image2.jpg" data-lightbox="mygallery" data-title="Acá descripción"><img src="../images/novedades/image2.jpg" alt=""></a>
+										?>
 
 									</div>
 

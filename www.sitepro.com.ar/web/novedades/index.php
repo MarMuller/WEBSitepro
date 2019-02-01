@@ -1102,25 +1102,8 @@
 
 								<?php
 								// la info de las old olds entries está acá:
-								$entries = [
-									["date" => "21 de Noviembre, 2018", "place" => "??? (Perú)", "cover" => "../images/novedades/image1.jpg"],
-									["date" => "? de Septiembre, 2018", "place" => "Buenos Aires (Argentina)", "cover" => "../images/novedades/image2.jpg"],
-									["date" => "1 de Agosto, 2018", "place" => "??? (México)", "cover" => "../images/novedades/image3.jpg"],
-									["date" => "? de Mayo, 2018", "place" => "Lima (Perú)", "cover" => "../images/novedades/image4.jpg"],
-									["date" => "16 de Mayo, 2018", "place" => "??? (Perú)", "cover" => "../images/novedades/image5.jpg"],
-									["date" => "? de Septiembre, 2017", "place" => "Buenos Aires (Argentina)", "cover" => "../images/novedades/image1.jpg"],
-									["date" => "18 de Octubre, 2017", "place" => "??? (Perú)", "cover" => "../images/novedades/image2.jpg"],
-									["date" => "17 de Mayo, 2017", "place" => "??? (Perú)", "cover" => "../images/novedades/image3.jpg"],
-									["date" => "? de Mayo, 2017", "place" => "Lima (Perú)", "cover" => "../images/novedades/image4.jpg"],
-									["date" => "26 de Abril, 2017", "place" => "Bogotá (Colombia)", "cover" => "../images/novedades/image5.jpg"],
-									["date" => "? de Abril, 2017", "place" => "Bogotá (Colombia)", "cover" => "../images/novedades/image1.jpg"],
-									["date" => "12 de Octubre, 2016", "place" => "??? (Perú)", "cover" => "../images/novedades/image2.jpg"],
-									["date" => "27 de Abril, 2016", "place" => "??? (Perú)", "cover" => "../images/novedades/image2.jpg"],
-									["date" => "13 de Octubre,2015", "place" => "Lima (Perú)", "cover" => "../images/novedades/image2.jpg"]
-								];
+								include 'eventos/viejosEventos.php';
 								?>
-
-								<!-- <img src="<?php echo $entries[1]["cover"] ?>" alt="no funcaaaaa"> -->
 
 								<div class="old-events-entries with-empty-cells">
 
@@ -1130,14 +1113,14 @@
 										$num = 0;
 										foreach ($entries as $entry) {
 										    echo '
-												<div class="old-entry" onclick="window.location=\'previous-event.php\';" onmouseover="bigImg(this.children[2])" onmouseout="normalImg(this.children[2])">
+												<div class="old-entry" onclick="window.location=\'previous-event.php?entryn='.$num.'\';" onmouseover="bigImg(this.children[2])" onmouseout="normalImg(this.children[2])">
 
 												 	<span style="font-size:25px; color:#ccc; position:absolute; bottom:6px; right:15px; z-index: 2;"><i class="fa fa-plus-square-o"></i></span>
 
 													<div class="entry-info">
 														<a>
 															<div class="entry-date">'.$entries[$num]["date"].'</div>
-															<div class="entry-place">'.$entries[$num]["place"].'</div>
+															<div class="entry-place">'.$entries[$num]["country"].'</div>
 														</a>
 													</div>
 
