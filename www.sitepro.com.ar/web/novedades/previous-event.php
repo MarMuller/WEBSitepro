@@ -753,6 +753,10 @@
 
 </style>
 
+<!-- Image Gallery -->
+<link href="../css/lightbox.min.css" rel="stylesheet">
+<script src="../js/lightbox-plus-jquery.min.js"></script>
+
 
 </head>
 <!--HEAD-->
@@ -937,6 +941,13 @@
 
 								<style media="screen">
 
+									.line-divider{
+										width: 100%;
+										height: 1px;
+										background-color: #ccc;
+										margin: 0 auto;
+									}
+
 									.blueheader{
 										background-color: #44cde2;
 										color: white;
@@ -1002,12 +1013,12 @@
 									}
 
 									.entry-gallery {
-										background-color: lightgray;
+										/* background-color: lightgray; */
 										width: 100%;
 										max-width: 800px;
 										height: auto;
 										margin: 0 auto;
-										padding: 6px 6px 0 6px;
+										/* padding: 6px 6px 0 6px; */
 										display: flex;
 										justify-content: space-between;
 										flex-wrap:wrap;
@@ -1131,35 +1142,29 @@
 
 									<br>
 
+									<div class="line-divider" style="max-width:800px;"></div>
+
+									<br>
+
+									<h1 class="entry-title" style="font-size:22px; padding:0px; text-align:center;">Galería de Fotos</h1>
+
+									<br>
+
 									<div class="entry-gallery">
 
-										<div class="">
-											<img src="../images/novedades/image2.jpg" alt="">
-										</div>
+										<a href="../images/novedades/image2.jpg" data-lightbox="mygallery" data-title="Acá descripción"><img src="../images/novedades/image2.jpg" alt=""></a>
 
-										<div class="">
-											<img src="../images/novedades/image2.jpg" alt="">
-										</div>
+										<a href="../images/novedades/image1.jpg" data-lightbox="mygallery" data-title="Acá descripción"><img src="../images/novedades/image1.jpg" alt=""></a>
 
-										<div class="">
-											<img src="../images/novedades/image2.jpg" alt="">
-										</div>
+										<a href="../images/novedades/image3.jpg" data-lightbox="mygallery" data-title="Acá descripción"><img src="../images/novedades/image3.jpg" alt=""></a>
 
-										<div class="">
-											<img src="../images/novedades/image2.jpg" alt="">
-										</div>
+										<a href="../images/novedades/image1.jpg" data-lightbox="mygallery" data-title="Acá descripción"><img src="../images/novedades/image1.jpg" alt=""></a>
 
-										<div class="">
-											<img src="../images/novedades/image2.jpg" alt="">
-										</div>
+										<a href="../images/novedades/image2.jpg" data-lightbox="mygallery" data-title="Acá descripción"><img src="../images/novedades/image2.jpg" alt=""></a>
 
 									</div>
 
 									<br><br>
-
-									<!-- Mapa de Ubicación -->
-									<div style="width: 100%;"><iframe width="100%" height="500" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=C%C3%A1tulo%20Castillo%202630%2C%20C1261ACF%20CABA%2C%20Argentina+(SItepro%20S.A.)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Map a route</a></iframe></div>
-									<!-- FIN Mapa de Ubicación -->
 
 								</div>
 
