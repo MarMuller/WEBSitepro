@@ -1035,7 +1035,8 @@
 									  object-fit: cover;
 										margin-top: 0px;
 										margin-bottom: 1px;
-										filter: grayscale(80%);
+										filter: grayscale(60%);
+										border: 1px solid #ccc;
 										opacity: 0.8;
 										transition: all 0.5s ease-out;
 									}
